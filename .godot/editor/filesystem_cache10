@@ -1,0 +1,47 @@
+72322a848ab928aa5c89f0cb78209805
+::res://::1761666208
+andar 1.tscn::PackedScene::6315104889575469119::1759573872::0::1::::<><><>0<>0<><>::uid://dlauv7aeuw7ko::::res://player.gd<>uid://box6icyokl57::::res://icon.svg<>uid://hdy4jiurhq6j::::res://interacao.gd<>uid://d3bkej32rehi4::::res://walking.ogg<>uid://ctmkpb1go88ur::::res://fundo 1.png<>uid://dhxfamix1lgv2::::res://bandeirante.png<>uid://c4o60b4wqvmfs::::res://luzjanela.png<>uid://gijb51i5wccw::::res://soldado romano.png<>uid://di4hlmouihypu::::res://cavalaria (r).png<>uid://1eswmndjmjd6::::res://porta.png<>uid://duo8xrl8u3ido::::res://ubirajara.png<>uid://b7hauv86h67pe::::res://luzposte.png<>uid://duxa5fp2b3n51::::res://cavalaria (l).png<>uid://bhommvj7svr8i::::res://poste.png<>uid://b8idgt0ajwupd::::res://gdr music.ogg<>uid://bp7dgm41ieyjf::::res://vargas.png<>uid://dbcgdohselwcn::::res://visao_da_escada.gd<>uid://dmj1puiicrlba::::res://escada.png<>uid://b36ocvipj016i::::res://fala_estatua_1.gd<>uid://dmg4ff5rjuepd::::res://interaja.png<>uid://dwk7gmu8o7sod::::res://mesa.png
+andar 2.tscn::PackedScene::3591276463098711775::1759529716::0::1::::<><><>0<>0<><>::uid://dlauv7aeuw7ko::::res://player.gd<>uid://box6icyokl57::::res://icon.svg<>uid://hdy4jiurhq6j::::res://interacao.gd<>uid://d3bkej32rehi4::::res://walking.ogg
+balao.png::CompressedTexture2D::4296388721640462154::1759562620::1761666211::1::::<><><>0<>0<>db44550015a80b26b0c582ef29d80343<>res://.godot/imported/balao.png-36f61ae894fa5c998236b7b5cf2c38a1.ctex::
+balão.png::CompressedTexture2D::1004862608020511656::1759562476::1761666208::1::::<><><>0<>0<>7c561cc013b179f3aa24c160c9bb3ba0<>res://.godot/imported/balão.png-60b44d6f64b7dfe09f7f490d25b18fb1.ctex::
+bandeirante.png::CompressedTexture2D::7698368873571573589::1759561038::1761666214::1::::<><><>0<>0<>949841eac6dbc462ed9817822dd28264<>res://.godot/imported/bandeirante.png-579f783207e0d348c451d95f39bddcd7.ctex::
+caixa_de_dialogo.gd::GDScript::6144971896692593526::1759572724::0::1::::<>MarginContainer<><>0<>0<><>::
+caixa_de_dialogo.tscn::PackedScene::479218950702201790::1759570382::0::1::::<><><>0<>0<><>::uid://ctsw13qqw7kos::::res://caixa_de_dialogo.gd<>uid://ok068bgv531e::::res://balão.png
+cavalaria (l).png::CompressedTexture2D::8610573473018498906::1759561038::1761666214::1::::<><><>0<>0<>92317c335db25e3474eed1cea3f73c27<>res://.godot/imported/cavalaria (l).png-562e7c4f175414b51924957b1191fa2e.ctex::
+cavalaria (r).png::CompressedTexture2D::7781085070560780970::1759561038::1761666214::1::::<><><>0<>0<>2f8583ceb567545e662eb4a2e1273994<>res://.godot/imported/cavalaria (r).png-382f8d611a1e6c767b81b4b165c715f6.ctex::
+cidadania.png::CompressedTexture2D::2947473885696502933::1759561038::1761666213::1::::<><><>0<>0<>b0addbfa58428941d05a8a5bf6b8736b<>res://.godot/imported/cidadania.png-5e85902b5453adc30b96dd075b53c70b.ctex::
+comodo atual.png::CompressedTexture2D::3142365243545672041::1759515698::1761666211::1::::<><><>0<>0<>b096a6888a5152fd8dbd116160ebc61f<>res://.godot/imported/comodo atual.png-ed760003d9e87b7112bbc6bfc09d51ce.ctex::
+control.tscn::PackedScene::7350043135870640677::1759520876::0::1::::<><><>0<>0<><>::
+escada.png::CompressedTexture2D::8021714066435006454::1759163990::1761666213::1::::<><><>0<>0<>726c5a49d2e0f1a2d733fdce4d59e162<>res://.godot/imported/escada.png-3734a507e41eed96808dfb11b04b758d.ctex::
+export_presets.cfg::TextFile::-1::1759572322::0::1::::<><><>0<>0<><>::
+fala_estatua_1.gd::GDScript::4416558741463761606::1759570356::0::1::::<>Node2D<><>0<>0<><>::
+fala_estatua_2.gd::GDScript::3182045456859558651::1759566042::0::1::::<>Node2D<><>0<>0<><>::
+fundo 1.png::CompressedTexture2D::6131835979374694885::1758989536::1761666214::1::::<><><>0<>0<>616cdcd7c844fecd851817904293f611<>res://.godot/imported/fundo 1.png-81503aad6413b567bc6e82321a924e70.ctex::
+gdr music.ogg::AudioStreamOggVorbis::4719361448099055185::1759007084::1761666208::1::::<><><>0<>0<>e5d236aa09d20b79a3729d9ade58270c<>res://.godot/imported/gdr music.ogg-807498827895624c41e509d159a50d4e.oggvorbisstr::
+icon.svg::CompressedTexture2D::100542407025525368::1758932746::1761666211::1::::<><><>0<>0<>d6aa7a726a90130c2eb6d44035a9cc87<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+interacao.gd::GDScript::499024520578350639::1759438570::0::1::::<>Button<><>0<>0<><>::
+interactbutton.wav::AudioStreamWAV::5439534537139473302::1759005640::1761666214::1::::<><><>0<>0<>85e5150f021ab3176a313a39b25068fa<>res://.godot/imported/interactbutton.wav-514b644f9b58b45bc04e300fb941c75a.sample::
+interaja.png::CompressedTexture2D::8015684472765906017::1759266112::1761666211::1::::<><><>0<>0<>b80c934df58bce49e138b9aad1dc1d41<>res://.godot/imported/interaja.png-65cce8f3efdeab619b98213ec8a6250d.ctex::
+luzjanela.png::CompressedTexture2D::6839146091413839252::1759181306::1761666210::1::::<><><>0<>0<>3c36dec0ae5d86e7fa1e55b728572347<>res://.godot/imported/luzjanela.png-96035d8d026d7add90b5fa44e0398f4c.ctex::
+luzposte.png::CompressedTexture2D::4646951195654660874::1759176026::1761666210::1::::<><><>0<>0<>e961b55598a7531525b285b98d21cf4b<>res://.godot/imported/luzposte.png-81a49ee2beb2f4b3d9dfcc1ab3aec153.ctex::
+mapateste.jpg::CompressedTexture2D::5653532084950020730::1758932776::1761666209::1::::<><><>0<>0<>687dd10a8f25f1b82a7a999d0ab0bd84<>res://.godot/imported/mapateste.jpg-080ac21bdf8ee431ba626e79e3f60423.ctex::
+mesa.png::CompressedTexture2D::8726014709884216359::1759571256::1761666211::1::::<><><>0<>0<>9a9d947b919da0e9087a8ee6073277c2<>res://.godot/imported/mesa.png-9a7dcab07d06434c7b186e3ee59c2c29.ctex::
+pintura.png::::-1::1759570820::1759570820::0::::<><><>0<>0<>956232d6dd74c1eff8407d9ddcc5323e<>::
+player.gd::GDScript::7932592853581566546::1759574028::0::1::::<>CharacterBody2D<><>0<>0<><>::
+pluralismo.png::CompressedTexture2D::1762013353035108796::1759561038::1761666212::1::::<><><>0<>0<>7aeaae78174628633b21da2294714b1e<>res://.godot/imported/pluralismo.png-5b9e2b57ecb07a2493aae641f1095cd4.ctex::
+porta.png::CompressedTexture2D::1834300289452259769::1759511216::1761666213::1::::<><><>0<>0<>ad819d529508097dc33495dea64e7bf8<>res://.godot/imported/porta.png-d31a5fc52684828befc7e6cc6e16c7b1.ctex::
+poste.png::CompressedTexture2D::2907395029528647478::1759182024::1761666209::1::::<><><>0<>0<>744f9275bcf374ad293bfbfc82aa59ee<>res://.godot/imported/poste.png-6a565b3a9b8caa88c2d8704c9a3db570.ctex::
+skip.wav::AudioStreamWAV::4531228797893037755::1759005640::1761666214::1::::<><><>0<>0<>3db0b1d695743da7e6e0f3ae9a6e52d5<>res://.godot/imported/skip.wav-e99f36118066a9babc42544f40baf01e.sample::
+soberania1.gd::GDScript::3392888080670489211::1759570744::0::1::::<>Area2D<><>0<>0<><>::
+soberania.png::CompressedTexture2D::4085747635594101249::1759561038::1761666211::1::::<><><>0<>0<>433c8084f522c9909fe54b01e4f26480<>res://.godot/imported/soberania.png-67745b465db0f2eaf9058cfa3a45c648.ctex::
+soldado romano.png::CompressedTexture2D::438197938859335282::1759561038::1761666211::1::::<><><>0<>0<>07dc9ea5655f7dfff8d555cbd07705e1<>res://.godot/imported/soldado romano.png-438aeebf6a5dfdcc1a0acee2dcf6ee25.ctex::
+trabalho.png::CompressedTexture2D::7187784535901457293::1759561038::1761666211::1::::<><><>0<>0<>92c1f9ca337e8f8d4d28945472202846<>res://.godot/imported/trabalho.png-21b84de7abf8e496c57c64a8a1f863e5.ctex::
+ubirajara.png::CompressedTexture2D::8593985857834900244::1759561038::1761666211::1::::<><><>0<>0<>0d8fae03f810ac0a1eb4ddf5d530d666<>res://.godot/imported/ubirajara.png-6e9584a8cc328089ddec4b0432a47216.ctex::
+ui.gd::GDScript::7869344515026093::1759325750::0::1::::<>CanvasLayer<><>0<>0<><>::
+vargas.png::CompressedTexture2D::3505506968406955191::1759561038::1761666211::1::::<><><>0<>0<>acd32f6fdf16fd8c51b48b9a1f19c998<>res://.godot/imported/vargas.png-b858a6dedde636a3d25d435dc9527a83.ctex::
+visao_da_escada.gd::GDScript::7233950056527942337::1759436582::0::1::::<>Area2D<><>0<>0<><>::
+walking.ogg::AudioStreamOggVorbis::9127228881015868633::1759009280::1761666208::1::::<><><>0<>0<>e52694ea91f8208c1cde11ac279c7f3e<>res://.godot/imported/walking.ogg-bc61db5c67663f0eee59d85adf1efaf0.oggvorbisstr::
+::res://GDR-Backup/::1759614864
+::res://Guardioes-Da-Republica/::1759614856
+::res://singletons/::1759614920
+dialog_manager.gd::GDScript::8382013764714363327::1759518864::0::1::::<>Node<><>0<>0<><>::
