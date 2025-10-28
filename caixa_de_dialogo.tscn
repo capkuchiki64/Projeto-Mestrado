@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://g3ewwar244l3"]
+
+[ext_resource type="Script" uid="uid://ctsw13qqw7kos" path="res://caixa_de_dialogo.gd" id="1_i5e57"]
+[ext_resource type="Texture2D" uid="uid://ok068bgv531e" path="res://balão.png" id="2_i5e57"]
+
+[node name="Caixa de Dialogo" type="MarginContainer"]
+z_index = 4
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -345.0
+offset_top = -269.0
+offset_right = 352.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_i5e57")
+
+[node name="Textura" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_i5e57")
+region_rect = Rect2(0, 0, 480, 480)
+patch_margin_left = 128
+patch_margin_top = 64
+patch_margin_right = 64
+patch_margin_bottom = 64
+
+[node name="Margem" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
+
+[node name="Texto" type="Label" parent="Margem"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.54509807)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = " "
+vertical_alignment = 1
+
+[node name="Digitando" type="Timer" parent="."]
+
+[connection signal="timeout" from="Digitando" to="." method="_on_digitando_timeout"]

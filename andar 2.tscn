@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://brfv2filwv3pj"]
+
+[ext_resource type="Script" uid="uid://dlauv7aeuw7ko" path="res://player.gd" id="1_j7qpf"]
+[ext_resource type="Texture2D" uid="uid://box6icyokl57" path="res://icon.svg" id="2_o2opn"]
+[ext_resource type="Script" uid="uid://hdy4jiurhq6j" path="res://interacao.gd" id="3_ljmll"]
+[ext_resource type="AudioStream" uid="uid://d3bkej32rehi4" path="res://walking.ogg" id="4_ir3ot"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qhtow"]
+radius = 41.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="." groups=["player"]]
+position = Vector2(0, 800)
+collision_layer = 255
+script = ExtResource("1_j7qpf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("CircleShape2D_qhtow")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("2_o2opn")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(0.5, 0.5)
+position_smoothing_enabled = true
+position_smoothing_speed = 1.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player/Camera2D"]
+
+[node name="Interacao" type="Button" parent="Player/Camera2D/CanvasLayer"]
+offset_right = 8.0
+offset_bottom = 8.0
+icon = ExtResource("2_o2opn")
+script = ExtResource("3_ljmll")
+alvo_interacao = NodePath("../../..")
+
+[node name="Walking" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource("4_ir3ot")
+volume_db = 8.078
+autoplay = true
