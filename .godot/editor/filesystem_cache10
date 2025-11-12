@@ -1,9 +1,10 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1761756484
+::res://::1762966064
+andar 1.tscn::PackedScene::4956077482937132426::1761758642::0::1::::<><><>0<>0<><>::res://player.gd<>res://icon.svg<>res://interacao.gd<>res://walking.ogg<>res://fundo 1.png<>res://bandeirante.png<>res://luzjanela.png<>res://soldado romano.png<>res://cavalaria (r).png<>res://porta.png<>res://ubirajara.png<>res://luzposte.png<>res://cavalaria (l).png<>res://poste.png<>res://gdr music.ogg<>res://vargas.png<>res://visao_da_escada.gd<>res://escada.png<>res://fala_estatua_1.gd<>res://interaja.png<>res://mesa.png
 caixa_de_dialogo.tscn::PackedScene::479218950702201790::1759570382::0::1::::<><><>0<>0<><>::uid://ctsw13qqw7kos::::res://caixa_de_dialogo.gd<>uid://ok068bgv531e::::res://balão.png
 control.tscn::PackedScene::7350043135870640677::1759520876::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1759572322::0::1::::<><><>0<>0<><>::
-::res://audios/::1761756484
+::res://audios/::1761756499
 gdr music.ogg::AudioStreamOggVorbis::9043240178646812033::1759007084::1761756362::1::::<><><>0<>0<>7a88f30cc97d86ebafb8108bf13cf563<>res://.godot/imported/gdr music.ogg-9b6304d769e99688c0bd228749dbfef2.oggvorbisstr::
 interactbutton.wav::AudioStreamWAV::2064043877386874913::1759005640::1761756365::1::::<><><>0<>0<>bc8a314ab309b7e12b8166857796f5eb<>res://.godot/imported/interactbutton.wav-a04cb8f170c8a7d7f254d0139bd81eb7.sample::
 skip.wav::AudioStreamWAV::8846597637867053658::1759005640::1761756499::1::::<><><>0<>0<>2ac8e0e0e8cd967e4f7978ed3315b9ed<>res://.godot/imported/skip.wav-99681befe0b889f17b1e9f131c347537.sample::
@@ -11,10 +12,8 @@ walking.ogg::AudioStreamOggVorbis::6092545230746001688::1759009280::1761756498::
 ::res://cenas/::1761756224
 andar 1.tscn::PackedScene::6315104889575469119::1759573872::0::1::::<><><>0<>0<><>::uid://dlauv7aeuw7ko::::res://player.gd<>uid://box6icyokl57::::res://icon.svg<>uid://hdy4jiurhq6j::::res://interacao.gd<>uid://d3bkej32rehi4::::res://walking.ogg<>uid://ctmkpb1go88ur::::res://fundo 1.png<>uid://dhxfamix1lgv2::::res://bandeirante.png<>uid://c4o60b4wqvmfs::::res://luzjanela.png<>uid://gijb51i5wccw::::res://soldado romano.png<>uid://di4hlmouihypu::::res://cavalaria (r).png<>uid://1eswmndjmjd6::::res://porta.png<>uid://duo8xrl8u3ido::::res://ubirajara.png<>uid://b7hauv86h67pe::::res://luzposte.png<>uid://duxa5fp2b3n51::::res://cavalaria (l).png<>uid://bhommvj7svr8i::::res://poste.png<>uid://b8idgt0ajwupd::::res://gdr music.ogg<>uid://bp7dgm41ieyjf::::res://vargas.png<>uid://dbcgdohselwcn::::res://visao_da_escada.gd<>uid://dmj1puiicrlba::::res://escada.png<>uid://b36ocvipj016i::::res://fala_estatua_1.gd<>uid://dmg4ff5rjuepd::::res://interaja.png<>uid://dwk7gmu8o7sod::::res://mesa.png
 andar 2.tscn::PackedScene::3591276463098711775::1759529716::0::1::::<><><>0<>0<><>::uid://dlauv7aeuw7ko::::res://player.gd<>uid://box6icyokl57::::res://icon.svg<>uid://hdy4jiurhq6j::::res://interacao.gd<>uid://d3bkej32rehi4::::res://walking.ogg
-::res://GDR-Backup/::1759614864
-::res://Guardioes-Da-Republica/::1759614856
 ::res://imports/::1761756457
-::res://scripts/::1761756475
+::res://scripts/::1761756498
 caixa_de_dialogo.gd::GDScript::1692622504339359781::1759572724::0::1::::<>MarginContainer<><>0<>0<><>::
 fala_estatua_1.gd::GDScript::9163983834079368424::1759570356::0::1::::<>Node2D<><>0<>0<><>::
 fala_estatua_2.gd::GDScript::1283229394492456804::1759566042::0::1::::<>Node2D<><>0<>0<><>::
@@ -25,7 +24,7 @@ ui.gd::GDScript::6978106228348329109::1759325750::0::1::::<>CanvasLayer<><>0<>0<
 visao_da_escada.gd::GDScript::8102575103648429961::1759436582::0::1::::<>Area2D<><>0<>0<><>::
 ::res://singletons/::1759614920
 dialog_manager.gd::GDScript::8382013764714363327::1759518864::0::1::::<>Node<><>0<>0<><>::
-::res://sprites/::1761756467
+::res://sprites/::1761756499
 balao.png::CompressedTexture2D::2280687535404512493::1759562620::1761756364::1::::<><><>0<>0<>b4e3bc3981d5d09d2561a7a7e1db61d6<>res://.godot/imported/balao.png-81ec1735663d44fab60edfbc5a313cfe.ctex::
 balão.png::CompressedTexture2D::1491679841977965492::1759562476::1761756364::1::::<><><>0<>0<>b100386f0bd3cad79af32878931bf87a<>res://.godot/imported/balão.png-15dc1291141ffebb45b023a906c51661.ctex::
 bandeirante.png::CompressedTexture2D::2240802214533244307::1759561038::1761756365::1::::<><><>0<>0<>0d2c7972ff88f116217214928c9ce294<>res://.godot/imported/bandeirante.png-75e4037519c444b71d8fc4dd3e4d1f21.ctex::
