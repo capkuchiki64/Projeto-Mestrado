@@ -1,1 +1,5 @@
-res://andar 1.tscn
+res://cenas/sandbox.tscn
+res://cenas/player.tscn
+res://scripts/player.gd
+res://scripts/puzzle_1.gd
+res://puzzles.tscn

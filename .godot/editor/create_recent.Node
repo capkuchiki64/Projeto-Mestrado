@@ -1,0 +1,8 @@
+Sprite2D
+CollisionShape2D
+Area2D
+Camera2D
+TextureRect
+AnimatedSprite2D
+CharacterBody2D
+Button

@@ -1,77 +1,49 @@
 extends CharacterBody2D
 
-@export var speed: float = 500.0
+var input_vector: Vector2 = Vector2.ZERO
+var current_speed: float = 300.0
 
-var target_position: Vector2
-var moving: bool = false
-var pressed = false
-var keys: Dictionary = {}
+@onready var _sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-# Área de interação para detectar portas próximas (opcional)
-@onready var interact_area: Area2D = get_node_or_null("InteractArea")
+var can_interact: bool = false
+var interact_target: Node = null
+
 
 func _ready():
-#	$Interacao.connect("pressed", self, "_on_interact_button_pressed")
-	target_position = global_position
-	var _on_interact_button_pressed = false
+	pass
 
 
-func _unhandled_input(event):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		target_position = get_global_mouse_position()
-		moving = true
-	if Input.is_action_just_pressed("interacao"):
-		executar_interacao()
-	if event.is_action_pressed("interacao"):
-		if interact_area:
-			for body in interact_area.get_overlapping_bodies():
-				if body.has_method("try_open"):
-					body.try_open(self)
-					return
+func _process(delta):
+	handle_movement(delta)
 
 
-func _physics_process(delta):
-	var walking = $Walking as AudioStreamPlayer2D
-	
-	if moving:
-		var to_target = target_position - global_position
-		var distance = to_target.length()
-		var step = speed * delta
-		# Inventário: tipo_de_chave -> quantidade
-		
+func handle_movement(delta):
+	input_vector = Vector2.ZERO  # reset do vetor a cada frame
 
+	if Input.is_action_pressed("direita"):
+		input_vector.x = 1
+		_sprite.play("walk_right")
 
-		if distance > step:
-			velocity = to_target.normalized() * speed
-			move_and_slide()
-		else:
-			global_position = target_position
-			velocity = Vector2.ZERO
-			moving = false
+	elif Input.is_action_pressed("esquerda"):
+		input_vector.x = -1
+		_sprite.play("walk_left")
+
+	elif Input.is_action_pressed("cima"):
+		input_vector.y = -1
+		_sprite.play("walk_up")
+
+	elif Input.is_action_pressed("baixo"):
+		input_vector.y = 1
+		_sprite.play("walk_down")
+
 	else:
-		velocity = Vector2.ZERO
-		walking.play()
-		
-func executar_interacao():
-	# Toda a lógica de interação (abrir diálogo, pegar item, etc.)
-	print("Interagir!")
-#func interagir_com_estatua():
-	# Lógica de interação, como detectar estátuas próximas e interagir
-#	print("Interagindo com estátua!")
-func add_key(t: int, amount: int = 1) -> void:
-	keys[t] = keys.get(t, 0) + amount
-func has_key(t: int) -> bool:
-	return keys.get(t, 0) > 0
+		_sprite.play("idle")
 
-func remove_key(t: int, amount: int = 1) -> void:
-	if has_key(t):
-		keys[t] = max(0, int(keys[t]) - amount)
+	# movimento
+	velocity = input_vector.normalized() * current_speed
+	move_and_slide()
 
-func get_owned_keys() -> Array[int]:
-	var out: Array[int] = []
-	for t in keys.keys():
-		if keys[t] > 0:
-			out.append(t)
-	return out
-	
-# Interagir com a porta focada/mais próxima
+
+func _input(event):
+	if event.is_action_pressed("interacao") and can_interact and interact_target:
+		interact_target.interact()

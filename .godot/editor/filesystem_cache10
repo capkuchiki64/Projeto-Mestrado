@@ -1,51 +1,61 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1762966064
-andar 1.tscn::PackedScene::4956077482937132426::1761758642::0::1::::<><><>0<>0<><>::res://player.gd<>res://icon.svg<>res://interacao.gd<>res://walking.ogg<>res://fundo 1.png<>res://bandeirante.png<>res://luzjanela.png<>res://soldado romano.png<>res://cavalaria (r).png<>res://porta.png<>res://ubirajara.png<>res://luzposte.png<>res://cavalaria (l).png<>res://poste.png<>res://gdr music.ogg<>res://vargas.png<>res://visao_da_escada.gd<>res://escada.png<>res://fala_estatua_1.gd<>res://interaja.png<>res://mesa.png
-caixa_de_dialogo.tscn::PackedScene::479218950702201790::1759570382::0::1::::<><><>0<>0<><>::uid://ctsw13qqw7kos::::res://caixa_de_dialogo.gd<>uid://ok068bgv531e::::res://balão.png
-control.tscn::PackedScene::7350043135870640677::1759520876::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1759572322::0::1::::<><><>0<>0<><>::
-::res://audios/::1761756499
-gdr music.ogg::AudioStreamOggVorbis::9043240178646812033::1759007084::1761756362::1::::<><><>0<>0<>7a88f30cc97d86ebafb8108bf13cf563<>res://.godot/imported/gdr music.ogg-9b6304d769e99688c0bd228749dbfef2.oggvorbisstr::
-interactbutton.wav::AudioStreamWAV::2064043877386874913::1759005640::1761756365::1::::<><><>0<>0<>bc8a314ab309b7e12b8166857796f5eb<>res://.godot/imported/interactbutton.wav-a04cb8f170c8a7d7f254d0139bd81eb7.sample::
-skip.wav::AudioStreamWAV::8846597637867053658::1759005640::1761756499::1::::<><><>0<>0<>2ac8e0e0e8cd967e4f7978ed3315b9ed<>res://.godot/imported/skip.wav-99681befe0b889f17b1e9f131c347537.sample::
-walking.ogg::AudioStreamOggVorbis::6092545230746001688::1759009280::1761756498::1::::<><><>0<>0<>a87d9d915d60185b38f20b32e4b82ff3<>res://.godot/imported/walking.ogg-ecbb30add728731a0dbbf58d01d9f7c9.oggvorbisstr::
-::res://cenas/::1761756224
-andar 1.tscn::PackedScene::6315104889575469119::1759573872::0::1::::<><><>0<>0<><>::uid://dlauv7aeuw7ko::::res://player.gd<>uid://box6icyokl57::::res://icon.svg<>uid://hdy4jiurhq6j::::res://interacao.gd<>uid://d3bkej32rehi4::::res://walking.ogg<>uid://ctmkpb1go88ur::::res://fundo 1.png<>uid://dhxfamix1lgv2::::res://bandeirante.png<>uid://c4o60b4wqvmfs::::res://luzjanela.png<>uid://gijb51i5wccw::::res://soldado romano.png<>uid://di4hlmouihypu::::res://cavalaria (r).png<>uid://1eswmndjmjd6::::res://porta.png<>uid://duo8xrl8u3ido::::res://ubirajara.png<>uid://b7hauv86h67pe::::res://luzposte.png<>uid://duxa5fp2b3n51::::res://cavalaria (l).png<>uid://bhommvj7svr8i::::res://poste.png<>uid://b8idgt0ajwupd::::res://gdr music.ogg<>uid://bp7dgm41ieyjf::::res://vargas.png<>uid://dbcgdohselwcn::::res://visao_da_escada.gd<>uid://dmj1puiicrlba::::res://escada.png<>uid://b36ocvipj016i::::res://fala_estatua_1.gd<>uid://dmg4ff5rjuepd::::res://interaja.png<>uid://dwk7gmu8o7sod::::res://mesa.png
-andar 2.tscn::PackedScene::3591276463098711775::1759529716::0::1::::<><><>0<>0<><>::uid://dlauv7aeuw7ko::::res://player.gd<>uid://box6icyokl57::::res://icon.svg<>uid://hdy4jiurhq6j::::res://interacao.gd<>uid://d3bkej32rehi4::::res://walking.ogg
-::res://imports/::1761756457
-::res://scripts/::1761756498
-caixa_de_dialogo.gd::GDScript::1692622504339359781::1759572724::0::1::::<>MarginContainer<><>0<>0<><>::
-fala_estatua_1.gd::GDScript::9163983834079368424::1759570356::0::1::::<>Node2D<><>0<>0<><>::
-fala_estatua_2.gd::GDScript::1283229394492456804::1759566042::0::1::::<>Node2D<><>0<>0<><>::
-interacao.gd::GDScript::8371219400048299555::1759438570::0::1::::<>Button<><>0<>0<><>::
-player.gd::GDScript::2800109526245581647::1759574028::0::1::::<>CharacterBody2D<><>0<>0<><>::
-soberania1.gd::GDScript::2346158503857158691::1759570744::0::1::::<>Area2D<><>0<>0<><>::
-ui.gd::GDScript::6978106228348329109::1759325750::0::1::::<>CanvasLayer<><>0<>0<><>::
-visao_da_escada.gd::GDScript::8102575103648429961::1759436582::0::1::::<>Area2D<><>0<>0<><>::
-::res://singletons/::1759614920
-dialog_manager.gd::GDScript::8382013764714363327::1759518864::0::1::::<>Node<><>0<>0<><>::
-::res://sprites/::1761756499
-balao.png::CompressedTexture2D::2280687535404512493::1759562620::1761756364::1::::<><><>0<>0<>b4e3bc3981d5d09d2561a7a7e1db61d6<>res://.godot/imported/balao.png-81ec1735663d44fab60edfbc5a313cfe.ctex::
-balão.png::CompressedTexture2D::1491679841977965492::1759562476::1761756364::1::::<><><>0<>0<>b100386f0bd3cad79af32878931bf87a<>res://.godot/imported/balão.png-15dc1291141ffebb45b023a906c51661.ctex::
-bandeirante.png::CompressedTexture2D::2240802214533244307::1759561038::1761756365::1::::<><><>0<>0<>0d2c7972ff88f116217214928c9ce294<>res://.godot/imported/bandeirante.png-75e4037519c444b71d8fc4dd3e4d1f21.ctex::
-cavalaria (l).png::CompressedTexture2D::7035525181339276851::1759561038::1761756365::1::::<><><>0<>0<>29e676f128fa4dfb78d124cb5653fb29<>res://.godot/imported/cavalaria (l).png-dbf989b77384bea208d9dd6e121d5b13.ctex::
-cavalaria (r).png::CompressedTexture2D::9117321585885303604::1759561038::1761756365::1::::<><><>0<>0<>0e5aa5b6357c25db6bd99ae733aadadb<>res://.godot/imported/cavalaria (r).png-ed50000109ee1364c445f2f9118fddee.ctex::
-cidadania.png::CompressedTexture2D::2600589978579593175::1759561038::1761756364::1::::<><><>0<>0<>c68989f026591675f42e9918fec35d8c<>res://.godot/imported/cidadania.png-e3b01a3b0967388cb16720287937de9f.ctex::
-comodo atual.png::CompressedTexture2D::2891572242611943347::1759515698::1761756362::1::::<><><>0<>0<>735939bd7022feb6d39e72b8ef89e7ca<>res://.godot/imported/comodo atual.png-78b007b36bfe434e8473fd89ee35c9f8.ctex::
-escada.png::CompressedTexture2D::5620788183212542656::1759163990::1761756364::1::::<><><>0<>0<>b6b6a8218373c200880133dc7aa08efb<>res://.godot/imported/escada.png-6e5d4392ebc68518120fb26a8eaf161a.ctex::
-fundo 1.png::CompressedTexture2D::7784710962778503153::1758989536::1761756364::1::::<><><>0<>0<>8e70f8bdf12f2607141e56dcdeb2a5c6<>res://.godot/imported/fundo 1.png-a9c7a251594543d81c3e7a7ebcb8ac32.ctex::
-icon.svg::CompressedTexture2D::5179680633081408496::1758932746::1761756362::1::::<><><>0<>0<>e2e7878f729196a4e339e30582875c7c<>res://.godot/imported/icon.svg-964d8c66fbd3bda40c44ca195472a8e1.ctex::
-interaja.png::CompressedTexture2D::960315767730846442::1759266112::1761756363::1::::<><><>0<>0<>48e0f0c6944b3a69f5ccf39e3a8a21a1<>res://.godot/imported/interaja.png-28dd0ec7bc30e61c77b8bfa42af23ef5.ctex::
-luzjanela.png::CompressedTexture2D::6833999547329654548::1759181306::1761756362::1::::<><><>0<>0<>da56a8b580f72f098f67570f405659a6<>res://.godot/imported/luzjanela.png-21765d12627ae9baa74a1edfe986ffdc.ctex::
-luzposte.png::CompressedTexture2D::9005413585803859867::1759176026::1761756362::1::::<><><>0<>0<>f272f59dd6bb6ed7dd53a2657aaa8590<>res://.godot/imported/luzposte.png-1dc16962375e3779057024c76dfd694d.ctex::
-mapateste.jpg::CompressedTexture2D::6331948604533641922::1758932776::1761756362::1::::<><><>0<>0<>a6fcaff752841ab02fcaa42da7fbaff8<>res://.godot/imported/mapateste.jpg-d3e95a056c9e9de57b7dec8035c1a60b.ctex::
-mesa.png::CompressedTexture2D::7506743793272709295::1759571256::1761756364::1::::<><><>0<>0<>27b5d4b159af7eb6762ef1f25e6087dd<>res://.godot/imported/mesa.png-5612e7998f517c10b1546903a8f0a852.ctex::
-pintura.png::CompressedTexture2D::244619616163262404::1759570820::1761756362::0::::<><><>0<>0<>21a8e3300a04bb15a65c6732b2c460a9<>::
-pluralismo.png::CompressedTexture2D::7562820848984402688::1759561038::1761756364::1::::<><><>0<>0<>c239d3e4be7cac00697b9a4c1f0f26ff<>res://.godot/imported/pluralismo.png-5aae242d8499585b0c0899cc4725fcee.ctex::
-porta.png::CompressedTexture2D::7766410733615148853::1759511216::1761756365::1::::<><><>0<>0<>e47bd6a26a9ca7a3ba4f7faa5048ee32<>res://.godot/imported/porta.png-11effb4348359bf608a34dfac0dbb0a9.ctex::
-poste.png::CompressedTexture2D::5344800728748826575::1759182024::1761756362::1::::<><><>0<>0<>32ccffe56a0cbc69eb84c93fb259d08b<>res://.godot/imported/poste.png-dfd69a2d39ad50d4c80da36eab77051a.ctex::
-soberania.png::CompressedTexture2D::5201381293242738881::1759561038::1761756499::1::::<><><>0<>0<>df4bf989f6e27e2f5660e1ce6c7d7268<>res://.godot/imported/soberania.png-b2a615c71cc8ecff90e57813b1aecb6f.ctex::
-soldado romano.png::CompressedTexture2D::2477530028772852770::1759561038::1761756499::1::::<><><>0<>0<>9ba1ce71e1081b30e44e08cd2d317f98<>res://.godot/imported/soldado romano.png-0db8edaa083c55eb573758deb43ab7fe.ctex::
-trabalho.png::CompressedTexture2D::6357252886379490191::1759561038::1761756499::1::::<><><>0<>0<>b572e6ff63f5f5cafa0d4fe8c7dc72fe<>res://.godot/imported/trabalho.png-6af1d4da4a3487304386fef71cc99248.ctex::
-ubirajara.png::CompressedTexture2D::3061534302266807368::1759561038::1761756499::1::::<><><>0<>0<>ff7bc9324effb04fe020794456e1ff38<>res://.godot/imported/ubirajara.png-62393ce718ecf35c93b113e160d436aa.ctex::
-vargas.png::CompressedTexture2D::1914626852978860003::1759561038::1761756499::1::::<><><>0<>0<>7729677da32d55ba632f8c7140e28f7e<>res://.godot/imported/vargas.png-a6caf76bede15ea632989b1250400705.ctex::
+::res://::1765474444
+andar 1.tscn::PackedScene::4956077482937132426::1765473365::0::1::::<><><>0<>0<><>::uid://bf5nnonckfgsl::::res://scripts/playerold.gd<>uid://cf2ct3ixn2oui::::res://sprites/icon.svg<>uid://drjc04dphhvah::::res://scripts/interacao.gd<>uid://cs2jlhjggk6oq::::res://audios/walking.ogg<>uid://di58b1lsaeb7n::::res://sprites/fundo 1.png<>uid://66pxj7x3tfnn::::res://sprites/bandeirante.png<>uid://c4mo8eboo5nei::::res://sprites/luzjanela.png<>uid://bbkes7t86mknq::::res://sprites/soldado romano.png<>uid://d25q7pmgfxici::::res://sprites/cavalaria (r).png<>uid://diwdwdrmp2gtp::::res://sprites/porta.png<>uid://bjvba1gy2xx5i::::res://sprites/ubirajara.png<>uid://d1kj31bge03t4::::res://sprites/luzposte.png<>uid://c7iccpbl1p684::::res://sprites/cavalaria (l).png<>uid://cifcc7ycbafg6::::res://sprites/poste.png<>uid://d13u3yis7wt3n::::res://audios/gdr music.ogg<>uid://2jpvh73ymrjn::::res://sprites/vargas.png<>uid://dno7h00pe7ieb::::res://scripts/visao_da_escada.gd<>uid://cmc0tbs6pcw1u::::res://sprites/escada.png<>uid://d3tdqe7nhcimq::::res://scripts/fala_estatua_1.gd<>uid://nxgi4annawe1::::res://sprites/interaja.png<>uid://de7k8dnqeaphf::::res://sprites/mesa.png
+caixa_de_dialogo.tscn::PackedScene::479218950702201790::1763065393::0::1::::<><><>0<>0<><>::uid://ctsw13qqw7kos::::res://caixa_de_dialogo.gd<>uid://ok068bgv531e::::res://balão.png
+control.tscn::PackedScene::7350043135870640677::1763065393::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1763065393::0::1::::<><><>0<>0<><>::
+::res://audios/::1763065421
+gdr music.ogg::AudioStreamOggVorbis::9043240178646812033::1763065393::1763065419::1::::<><><>0<>0<>7a88f30cc97d86ebafb8108bf13cf563<>res://.godot/imported/gdr music.ogg-9b6304d769e99688c0bd228749dbfef2.oggvorbisstr::
+interactbutton.wav::AudioStreamWAV::2064043877386874913::1763065393::1763065421::1::::<><><>0<>0<>bc8a314ab309b7e12b8166857796f5eb<>res://.godot/imported/interactbutton.wav-a04cb8f170c8a7d7f254d0139bd81eb7.sample::
+skip.wav::AudioStreamWAV::8846597637867053658::1763065393::1763065421::1::::<><><>0<>0<>2ac8e0e0e8cd967e4f7978ed3315b9ed<>res://.godot/imported/skip.wav-99681befe0b889f17b1e9f131c347537.sample::
+walking.ogg::AudioStreamOggVorbis::6092545230746001688::1763065393::1763065419::1::::<><><>0<>0<>a87d9d915d60185b38f20b32e4b82ff3<>res://.godot/imported/walking.ogg-ecbb30add728731a0dbbf58d01d9f7c9.oggvorbisstr::
+::res://cenas/::1765473664
+andar 1.tscn::PackedScene::6315104889575469119::1763065393::0::1::::<><><>0<>0<><>::uid://dlauv7aeuw7ko::::res://player.gd<>uid://box6icyokl57::::res://icon.svg<>uid://hdy4jiurhq6j::::res://interacao.gd<>uid://d3bkej32rehi4::::res://walking.ogg<>uid://ctmkpb1go88ur::::res://fundo 1.png<>uid://dhxfamix1lgv2::::res://bandeirante.png<>uid://c4o60b4wqvmfs::::res://luzjanela.png<>uid://gijb51i5wccw::::res://soldado romano.png<>uid://di4hlmouihypu::::res://cavalaria (r).png<>uid://1eswmndjmjd6::::res://porta.png<>uid://duo8xrl8u3ido::::res://ubirajara.png<>uid://b7hauv86h67pe::::res://luzposte.png<>uid://duxa5fp2b3n51::::res://cavalaria (l).png<>uid://bhommvj7svr8i::::res://poste.png<>uid://b8idgt0ajwupd::::res://gdr music.ogg<>uid://bp7dgm41ieyjf::::res://vargas.png<>uid://dbcgdohselwcn::::res://visao_da_escada.gd<>uid://dmj1puiicrlba::::res://escada.png<>uid://b36ocvipj016i::::res://fala_estatua_1.gd<>uid://dmg4ff5rjuepd::::res://interaja.png<>uid://dwk7gmu8o7sod::::res://mesa.png
+andar 2.tscn::PackedScene::3591276463098711775::1763065393::0::1::::<><><>0<>0<><>::uid://dlauv7aeuw7ko::::res://player.gd<>uid://box6icyokl57::::res://icon.svg<>uid://hdy4jiurhq6j::::res://interacao.gd<>uid://d3bkej32rehi4::::res://walking.ogg
+player.tscn::PackedScene::7550019250266131630::1765473274::0::1::::<><><>0<>0<><>::uid://bb0eqm7ksc520::::res://sprites/player/turista_frente.png<>uid://c2fw2hhm62igt::::res://scripts/player.gd<>uid://vxii2wj021wd::::res://sprites/player/turista_esquerda.png<>uid://chl6qmpwccof7::::res://sprites/player/turista_direita.png<>uid://x7prcsjkqpjc::::res://sprites/player/turista_traz.png
+sandbox.tscn::PackedScene::5695005354355104061::1765473664::0::1::::<><><>0<>0<><>::uid://dftjyjmjsdrl3::::res://cenas/player.tscn<>uid://di58b1lsaeb7n::::res://sprites/fundo 1.png<>uid://c4mo8eboo5nei::::res://sprites/luzjanela.png<>uid://diwdwdrmp2gtp::::res://sprites/porta.png<>uid://d1kj31bge03t4::::res://sprites/luzposte.png<>uid://cifcc7ycbafg6::::res://sprites/poste.png
+::res://imports/::1763065393
+::res://scripts/::1765472076
+caixa_de_dialogo.gd::GDScript::1692622504339359781::1763065393::0::1::::<>MarginContainer<><>0<>0<><>::
+fala_estatua_1.gd::GDScript::9163983834079368424::1763065393::0::1::::<>Node2D<><>0<>0<><>::
+fala_estatua_2.gd::GDScript::1283229394492456804::1763065393::0::1::::<>Node2D<><>0<>0<><>::
+interacao.gd::GDScript::8371219400048299555::1763065393::0::1::::<>Button<><>0<>0<><>::
+player.gd::GDScript::6679646403724473863::1765472076::0::1::::<>CharacterBody2D<><>0<>0<><>::
+playerold.gd::GDScript::2800109526245581647::1763065393::0::1::::<>CharacterBody2D<><>0<>0<><>::
+soberania1.gd::GDScript::2346158503857158691::1763065393::0::1::::<>Area2D<><>0<>0<><>::
+ui.gd::GDScript::6978106228348329109::1763065393::0::1::::<>CanvasLayer<><>0<>0<><>::
+visao_da_escada.gd::GDScript::8102575103648429961::1763065393::0::1::::<>Area2D<><>0<>0<><>::
+::res://singletons/::1763065393
+dialog_manager.gd::GDScript::8382013764714363327::1763065393::0::1::::<>Node<><>0<>0<><>::
+::res://sprites/::1764868885
+balao.png::CompressedTexture2D::2280687535404512493::1763065393::1763065420::1::::<><><>0<>0<>b4e3bc3981d5d09d2561a7a7e1db61d6<>res://.godot/imported/balao.png-81ec1735663d44fab60edfbc5a313cfe.ctex::
+balão.png::CompressedTexture2D::1491679841977965492::1763065393::1763065420::1::::<><><>0<>0<>b100386f0bd3cad79af32878931bf87a<>res://.godot/imported/balão.png-15dc1291141ffebb45b023a906c51661.ctex::
+bandeirante.png::CompressedTexture2D::2240802214533244307::1763065393::1763065421::1::::<><><>0<>0<>0d2c7972ff88f116217214928c9ce294<>res://.godot/imported/bandeirante.png-75e4037519c444b71d8fc4dd3e4d1f21.ctex::
+cavalaria (l).png::CompressedTexture2D::7035525181339276851::1763065393::1763065421::1::::<><><>0<>0<>29e676f128fa4dfb78d124cb5653fb29<>res://.godot/imported/cavalaria (l).png-dbf989b77384bea208d9dd6e121d5b13.ctex::
+cavalaria (r).png::CompressedTexture2D::9117321585885303604::1763065393::1763065421::1::::<><><>0<>0<>0e5aa5b6357c25db6bd99ae733aadadb<>res://.godot/imported/cavalaria (r).png-ed50000109ee1364c445f2f9118fddee.ctex::
+cidadania.png::CompressedTexture2D::2600589978579593175::1763065393::1763065421::1::::<><><>0<>0<>c68989f026591675f42e9918fec35d8c<>res://.godot/imported/cidadania.png-e3b01a3b0967388cb16720287937de9f.ctex::
+comodo atual.png::CompressedTexture2D::2891572242611943347::1763065393::1763065420::1::::<><><>0<>0<>735939bd7022feb6d39e72b8ef89e7ca<>res://.godot/imported/comodo atual.png-78b007b36bfe434e8473fd89ee35c9f8.ctex::
+escada.png::CompressedTexture2D::5620788183212542656::1763065393::1763065421::1::::<><><>0<>0<>b6b6a8218373c200880133dc7aa08efb<>res://.godot/imported/escada.png-6e5d4392ebc68518120fb26a8eaf161a.ctex::
+fundo 1.png::CompressedTexture2D::7784710962778503153::1763065393::1763065421::1::::<><><>0<>0<>8e70f8bdf12f2607141e56dcdeb2a5c6<>res://.godot/imported/fundo 1.png-a9c7a251594543d81c3e7a7ebcb8ac32.ctex::
+icon.svg::CompressedTexture2D::5179680633081408496::1763065393::1763065420::1::::<><><>0<>0<>e2e7878f729196a4e339e30582875c7c<>res://.godot/imported/icon.svg-964d8c66fbd3bda40c44ca195472a8e1.ctex::
+interaja.png::CompressedTexture2D::960315767730846442::1763065393::1763065420::1::::<><><>0<>0<>48e0f0c6944b3a69f5ccf39e3a8a21a1<>res://.godot/imported/interaja.png-28dd0ec7bc30e61c77b8bfa42af23ef5.ctex::
+luzjanela.png::CompressedTexture2D::6833999547329654548::1763065393::1763065420::1::::<><><>0<>0<>da56a8b580f72f098f67570f405659a6<>res://.godot/imported/luzjanela.png-21765d12627ae9baa74a1edfe986ffdc.ctex::
+luzposte.png::CompressedTexture2D::9005413585803859867::1763065393::1763065420::1::::<><><>0<>0<>f272f59dd6bb6ed7dd53a2657aaa8590<>res://.godot/imported/luzposte.png-1dc16962375e3779057024c76dfd694d.ctex::
+mapateste.jpg::CompressedTexture2D::6331948604533641922::1763065393::1763065420::1::::<><><>0<>0<>a6fcaff752841ab02fcaa42da7fbaff8<>res://.godot/imported/mapateste.jpg-d3e95a056c9e9de57b7dec8035c1a60b.ctex::
+mesa.png::CompressedTexture2D::7506743793272709295::1763065393::1763065420::1::::<><><>0<>0<>27b5d4b159af7eb6762ef1f25e6087dd<>res://.godot/imported/mesa.png-5612e7998f517c10b1546903a8f0a852.ctex::
+pintura.png::CompressedTexture2D::244619616163262404::1763065393::1763065419::0::::<><><>0<>0<>21a8e3300a04bb15a65c6732b2c460a9<>::
+pluralismo.png::CompressedTexture2D::7562820848984402688::1763065393::1763065420::1::::<><><>0<>0<>c239d3e4be7cac00697b9a4c1f0f26ff<>res://.godot/imported/pluralismo.png-5aae242d8499585b0c0899cc4725fcee.ctex::
+porta.png::CompressedTexture2D::7766410733615148853::1763065393::1763065421::1::::<><><>0<>0<>e47bd6a26a9ca7a3ba4f7faa5048ee32<>res://.godot/imported/porta.png-11effb4348359bf608a34dfac0dbb0a9.ctex::
+poste.png::CompressedTexture2D::5344800728748826575::1763065393::1763065420::1::::<><><>0<>0<>32ccffe56a0cbc69eb84c93fb259d08b<>res://.godot/imported/poste.png-dfd69a2d39ad50d4c80da36eab77051a.ctex::
+soberania.png::CompressedTexture2D::5201381293242738881::1763065393::1763065420::1::::<><><>0<>0<>df4bf989f6e27e2f5660e1ce6c7d7268<>res://.godot/imported/soberania.png-b2a615c71cc8ecff90e57813b1aecb6f.ctex::
+soldado romano.png::CompressedTexture2D::2477530028772852770::1763065393::1763065420::1::::<><><>0<>0<>9ba1ce71e1081b30e44e08cd2d317f98<>res://.godot/imported/soldado romano.png-0db8edaa083c55eb573758deb43ab7fe.ctex::
+trabalho.png::CompressedTexture2D::6357252886379490191::1763065393::1763065420::1::::<><><>0<>0<>b572e6ff63f5f5cafa0d4fe8c7dc72fe<>res://.godot/imported/trabalho.png-6af1d4da4a3487304386fef71cc99248.ctex::
+ubirajara.png::CompressedTexture2D::3061534302266807368::1763065393::1763065420::1::::<><><>0<>0<>ff7bc9324effb04fe020794456e1ff38<>res://.godot/imported/ubirajara.png-62393ce718ecf35c93b113e160d436aa.ctex::
+vargas.png::CompressedTexture2D::1914626852978860003::1763065393::1763065420::1::::<><><>0<>0<>7729677da32d55ba632f8c7140e28f7e<>res://.godot/imported/vargas.png-a6caf76bede15ea632989b1250400705.ctex::
+::res://sprites/player/::1765471165
+turista_direita.png::CompressedTexture2D::5288782882079940018::1764812342::1765471165::1::::<><><>0<>0<>e19f1f08ecaf5bbb96d9513f2271b4b2<>res://.godot/imported/turista_direita.png-a91600adc3c8f582c10c0f08233bd17f.ctex::
+turista_esquerda.png::CompressedTexture2D::1521947879594996063::1764812312::1765471165::1::::<><><>0<>0<>add3cd73ac031872729211713a6c727e<>res://.godot/imported/turista_esquerda.png-a75efcad677f6b8c5ff29035ebc39136.ctex::
+turista_frente.png::CompressedTexture2D::2508491092048637591::1764812282::1764869178::1::::<><><>0<>0<>08b597efaebd73798f580d5ca5750e50<>res://.godot/imported/turista_frente.png-0dd979395de216eeff80bb363572e7dd.ctex::
+turista_traz.png::CompressedTexture2D::1681344738468646320::1764812266::1764869504::1::::<><><>0<>0<>d1c498488b5a0b42105d2a298b146de4<>res://.godot/imported/turista_traz.png-c2cfc4920208056845aa444cd5d87b6c.ctex::
+::res://ui/::1764862275
+menu.tscn::PackedScene::3280862376687435525::1764862275::0::1::::<><><>0<>0<><>::
