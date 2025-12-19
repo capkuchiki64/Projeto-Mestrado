@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cnex52q0sfe3n"]
+[gd_scene load_steps=25 format=3 uid="uid://cnex52q0sfe3n"]
 
 [ext_resource type="PackedScene" uid="uid://dftjyjmjsdrl3" path="res://cenas/player.tscn" id="1_75yar"]
 [ext_resource type="Texture2D" uid="uid://di58b1lsaeb7n" path="res://sprites/fundo 1.png" id="1_h5mg2"]
@@ -8,6 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://cifcc7ycbafg6" path="res://sprites/poste.png" id="5_mcr5q"]
 [ext_resource type="Script" uid="uid://ct778fpma3wo7" path="res://scripts/puzzle_1.gd" id="7_5d6dv"]
 [ext_resource type="Texture2D" uid="uid://cf2ct3ixn2oui" path="res://sprites/icon.svg" id="7_m6a0s"]
+[ext_resource type="Texture2D" uid="uid://66pxj7x3tfnn" path="res://sprites/bandeirante.png" id="9_7oyat"]
+[ext_resource type="Texture2D" uid="uid://bbkes7t86mknq" path="res://sprites/soldado romano.png" id="10_gycn0"]
+[ext_resource type="Texture2D" uid="uid://d25q7pmgfxici" path="res://sprites/cavalaria (r).png" id="11_81fan"]
+[ext_resource type="Texture2D" uid="uid://bjvba1gy2xx5i" path="res://sprites/ubirajara.png" id="12_6u4a5"]
+[ext_resource type="Texture2D" uid="uid://c7iccpbl1p684" path="res://sprites/cavalaria (l).png" id="13_awqth"]
+[ext_resource type="Texture2D" uid="uid://2jpvh73ymrjn" path="res://sprites/vargas.png" id="14_28pwm"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_n2x6f"]
 
@@ -28,6 +34,15 @@ radius = 25.566784
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5d6dv"]
 size = Vector2(128, 130)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x5eif"]
+radius = 75.00667
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3yj5"]
+size = Vector2(132, 147)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gycn0"]
+size = Vector2(282, 312)
 
 [node name="Sandbox" type="Node2D"]
 
@@ -418,3 +433,80 @@ shape = SubResource("RectangleShape2D_5d6dv")
 position = Vector2(617, 475)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="Estatuas" type="Node" parent="."]
+
+[node name="Estatua 4" type="StaticBody2D" parent="Estatuas"]
+position = Vector2(5, -182)
+
+[node name="Atrito" type="CollisionShape2D" parent="Estatuas/Estatua 4"]
+shape = SubResource("CircleShape2D_x5eif")
+
+[node name="Sprite2D" type="Sprite2D" parent="Estatuas/Estatua 4"]
+z_index = -4
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_7oyat")
+
+[node name="Estatua 3" type="StaticBody2D" parent="Estatuas"]
+position = Vector2(400, 850)
+
+[node name="Atrito" type="CollisionShape2D" parent="Estatuas/Estatua 3"]
+shape = SubResource("CircleShape2D_x5eif")
+
+[node name="Sprite2D" type="Sprite2D" parent="Estatuas/Estatua 3"]
+z_index = 1
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("10_gycn0")
+
+[node name="Estatua 2" type="StaticBody2D" parent="Estatuas"]
+position = Vector2(412, 332)
+scale = Vector2(0.9, 0.9)
+
+[node name="Atrito" type="CollisionShape2D" parent="Estatuas/Estatua 2"]
+scale = Vector2(0.9, 0.9)
+shape = SubResource("CircleShape2D_x5eif")
+
+[node name="Sprite2D" type="Sprite2D" parent="Estatuas/Estatua 2"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("11_81fan")
+
+[node name="Estatua 1 (Ubirajara)" type="StaticBody2D" parent="Estatuas"]
+position = Vector2(-412, 900)
+
+[node name="Atrito" type="CollisionShape2D" parent="Estatuas/Estatua 1 (Ubirajara)"]
+shape = SubResource("CircleShape2D_x5eif")
+
+[node name="Sprite2D" type="Sprite2D" parent="Estatuas/Estatua 1 (Ubirajara)"]
+position = Vector2(15, -57)
+scale = Vector2(0.13394919, 0.13394919)
+texture = ExtResource("12_6u4a5")
+
+[node name="Estatua 5" type="StaticBody2D" parent="Estatuas"]
+position = Vector2(-413.00006, 322)
+scale = Vector2(0.80999994, 0.80999994)
+
+[node name="Atrito" type="CollisionShape2D" parent="Estatuas/Estatua 5"]
+scale = Vector2(0.9, 0.9)
+shape = SubResource("CircleShape2D_x5eif")
+
+[node name="Sprite2D" type="Sprite2D" parent="Estatuas/Estatua 5"]
+z_index = -1
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("13_awqth")
+
+[node name="Getulio" type="StaticBody2D" parent="Estatuas"]
+position = Vector2(-413, 23)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Estatuas/Getulio"]
+position = Vector2(2, 4.5)
+shape = SubResource("RectangleShape2D_v3yj5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Estatuas/Getulio"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("14_28pwm")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(22, 146)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_gycn0")
