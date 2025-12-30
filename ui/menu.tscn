@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm0jlaswjncjt"]
+
+[ext_resource type="Script" uid="uid://biuoetarjlenh" path="res://scripts/button_play.gd" id="1_bwjgb"]
+[ext_resource type="Script" uid="uid://bh22epx5mlwel" path="res://scripts/button_quit.gd" id="2_udkah"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_udkah"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = SubResource("CanvasTexture_udkah")
+
+[node name="Button_Play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 720.6774
+offset_top = 600.0
+offset_right = 1064.3226
+offset_bottom = 710.0
+text = "INICIAR"
+script = ExtResource("1_bwjgb")
+
+[node name="Button_Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 755.25806
+offset_top = 801.0
+offset_right = 1029.742
+offset_bottom = 889.0
+text = "SAIR"
+script = ExtResource("2_udkah")
+
+[connection signal="pressed" from="Button_Play" to="Button_Play" method="_on_pressed"]
