@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8ttym0lvjok4"]
+
+[sub_resource type="Gradient" id="Gradient_c4gls"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_eyvwl"]
+gradient = SubResource("Gradient_c4gls")
+
+[node name="DialogBox" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Dialogo_1" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Dialogo_1"]
+scale = Vector2(6.1875, 1.0312499)
+texture = SubResource("GradientTexture2D_eyvwl")
+
+[node name="Label" type="Label" parent="Dialogo_1"]
+layout_mode = 0
+offset_left = -168.0
+offset_top = -16.0
+offset_right = 170.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Olá! Nosso objetivo é que ao final desta jornada, você possa conhecer 
+um pouco mais sobre os direitos e deveres do cidadão brasileiro."
+
+[node name="Dialogo_2" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Dialogo_2"]
+scale = Vector2(6.1875, 1.0312499)
+texture = SubResource("GradientTexture2D_eyvwl")
+
+[node name="Label" type="Label" parent="Dialogo_2"]
+layout_mode = 0
+offset_left = -168.0
+offset_top = -16.0
+offset_right = 170.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Olá! Nosso objetivo é que ao final desta jornada, você possa conhecer 
+um pouco mais sobre os direitos e deveres do cidadão brasileiro."
