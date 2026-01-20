@@ -1,9 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://bm0jlaswjncjt"]
+[gd_scene load_steps=9 format=3 uid="uid://bm0jlaswjncjt"]
 
 [ext_resource type="Script" uid="uid://biuoetarjlenh" path="res://scripts/button_play.gd" id="1_bwjgb"]
+[ext_resource type="Texture2D" uid="uid://ntdasik0cfku" path="res://ui/Rectangle 1.png" id="1_fcydj"]
+[ext_resource type="Texture2D" uid="uid://4pbpdb3eunk2" path="res://ui/jogar.png" id="2_jbsda"]
 [ext_resource type="Script" uid="uid://bh22epx5mlwel" path="res://scripts/button_quit.gd" id="2_udkah"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_udkah"]
+[ext_resource type="Texture2D" uid="uid://brsnius4ic3vy" path="res://ui/sair.png" id="4_l8jcj"]
+[ext_resource type="Texture2D" uid="uid://dkw0db8mmg14f" path="res://ui/gdr logo 1.png" id="5_0bcp5"]
+[ext_resource type="Texture2D" uid="uid://fosrrlfurixd" path="res://ui/creditos.png" id="6_0bcp5"]
+[ext_resource type="Script" uid="uid://c62w5g2sy1ctm" path="res://scripts/button_creditos.gd" id="6_jbsda"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -15,26 +19,48 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1920.0
+offset_left = -142.0
+offset_right = 1998.0
 offset_bottom = 1080.0
-texture = SubResource("CanvasTexture_udkah")
+texture = ExtResource("1_fcydj")
 
 [node name="Button_Play" type="Button" parent="."]
 layout_mode = 0
-offset_left = 720.6774
-offset_top = 600.0
-offset_right = 1064.3226
-offset_bottom = 710.0
-text = "INICIAR"
+offset_left = 312.0
+offset_top = 751.0
+offset_right = 695.00006
+offset_bottom = 864.0
+icon = ExtResource("2_jbsda")
+flat = true
 script = ExtResource("1_bwjgb")
 
 [node name="Button_Quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 755.25806
-offset_top = 801.0
-offset_right = 1029.742
-offset_bottom = 889.0
-text = "SAIR"
+offset_left = 1117.0
+offset_top = 749.0
+offset_right = 1502.0
+offset_bottom = 866.0
+icon = ExtResource("4_l8jcj")
+flat = true
 script = ExtResource("2_udkah")
 
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 77.0
+offset_right = 1491.0
+offset_bottom = 617.0
+texture = ExtResource("5_0bcp5")
+
+[node name="Button_Creditos" type="Button" parent="."]
+layout_mode = 0
+offset_left = 715.3226
+offset_top = 751.0
+offset_right = 1098.3225
+offset_bottom = 864.0
+icon = ExtResource("6_0bcp5")
+flat = true
+script = ExtResource("6_jbsda")
+
 [connection signal="pressed" from="Button_Play" to="Button_Play" method="_on_pressed"]
+[connection signal="pressed" from="Button_Creditos" to="Button_Creditos" method="_on_pressed"]
