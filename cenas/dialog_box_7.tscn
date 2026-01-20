@@ -1,0 +1,156 @@
+[gd_scene load_steps=2 format=3 uid="uid://b74tt3ll14263"]
+
+[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="1_m6j66"]
+
+[node name="DialogBox_7" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Dialogo_1" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_m6j66")
+
+[node name="Label" type="Label" parent="Dialogo_1"]
+layout_mode = 0
+offset_left = -189.0
+offset_top = -24.0
+offset_right = 189.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Eu sou Venus, a deusa romana do amor, do entendimento e guardiã do quarto
+ portal. Neste local foram realizadas festas e conversas que levaram ao 
+entendimento e harmonia entre pessoas que pensam muito diferente."
+
+[node name="Dialogo_2" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_m6j66")
+
+[node name="Label" type="Label" parent="Dialogo_2"]
+layout_mode = 0
+offset_left = -153.0
+offset_top = -16.0
+offset_right = 156.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Deixo você conhecer estes eventos históricos, pode exercer sua 
+liberdade de expressão. "
+
+[node name="Dialogo_3" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_3"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_m6j66")
+
+[node name="Label" type="Label" parent="Dialogo_3"]
+layout_mode = 0
+offset_left = -169.0
+offset_top = -24.0
+offset_right = 169.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Quando quiser avançar, a chave que abre o meu portal é a resposta a 
+este enigma: Eu sou tipo uma roda de conversa em que ninguém é 
+obrigado a pensar igual."
+
+[node name="Dialogo_4" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_4"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_m6j66")
+
+[node name="Label" type="Label" parent="Dialogo_4"]
+layout_mode = 0
+offset_left = -176.0
+offset_top = -24.0
+offset_right = 176.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Tem quem concorda, quem discorda, e até quem muda de ideia no meio 
+do caminho. Não sou briga, sou debate. Não sou bagunça, sou liberdade 
+de pensar diferente."
+
+[node name="Dialogo_5" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_5"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_m6j66")
+
+[node name="Label" type="Label" parent="Dialogo_5"]
+layout_mode = 0
+offset_left = -156.0
+offset_top = -16.0
+offset_right = 153.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Comigo, todo mundo tem espaço pra falar — mesmo que tenha 
+opinião contrária."
+
+[node name="Dialogo_6" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_6"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_m6j66")
+
+[node name="Label" type="Label" parent="Dialogo_6"]
+layout_mode = 0
+offset_left = -177.0
+offset_top = -24.0
+offset_right = 177.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Se só existisse uma ideia mandando em tudo, eu não existiria. Mas como 
+o mundo é diverso, eu tô aqui pra garantir que ninguém fique de fora 
+da conversa."
+
+[node name="Dialogo_7" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_7"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_m6j66")
+
+[node name="Label" type="Label" parent="Dialogo_7"]
+layout_mode = 0
+offset_left = -34.0
+offset_top = -7.0
+offset_right = 35.0
+offset_bottom = 7.0
+theme_override_font_sizes/font_size = 10
+text = "Quem sou eu?"

@@ -1,0 +1,132 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8lhr3ywkxh6v"]
+
+[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="1_0hjem"]
+
+[node name="DialogBox_5" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Dialogo_1" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_0hjem")
+
+[node name="Label" type="Label" parent="Dialogo_1"]
+layout_mode = 0
+offset_left = -157.0
+offset_top = -15.0
+offset_right = 157.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "Neste local foram tomadas muitas decisões importantes para os 
+direitos e deveres da população do Brasil."
+
+[node name="Dialogo_2" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_0hjem")
+
+[node name="Label" type="Label" parent="Dialogo_2"]
+layout_mode = 0
+offset_left = -161.0
+offset_top = -16.0
+offset_right = 159.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Se quiser avançar, eu preciso da chave correta para abrir o portal, 
+você saberá qual chave é a correta se responder a este enigma:"
+
+[node name="Dialogo_3" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_3"]
+position = Vector2(-111.375, 0)
+scale = Vector2(7.6114035, 0.2114278)
+texture = ExtResource("1_0hjem")
+
+[node name="Label" type="Label" parent="Dialogo_3"]
+layout_mode = 0
+offset_left = -162.0
+offset_top = -23.0
+offset_right = 163.0
+offset_bottom = 25.0
+theme_override_font_sizes/font_size = 10
+text = "“Sou mais que ter um documento na mão, tipo RG ou CPF. Sou a 
+parada que faz você ter voz pra escolher quem vai mandar no país, 
+e também pra cobrar quando algo não tá legal."
+
+[node name="Dialogo_4" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_4"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_0hjem")
+
+[node name="Label" type="Label" parent="Dialogo_4"]
+layout_mode = 0
+offset_left = -154.0
+offset_top = -16.0
+offset_right = 153.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Eu tô no seu direito de estudar, trabalhar, e até reclamar,
+se precisar, mas também tô na sua missão de respeitar o outro."
+
+[node name="Dialogo_5" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_5"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_0hjem")
+
+[node name="Label" type="Label" parent="Dialogo_5"]
+layout_mode = 0
+offset_left = -156.0
+offset_top = -16.0
+offset_right = 156.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Sem mim, ninguém tá realmente dentro do jogo. Comigo, você é 
+parte do time que constrói o lugar onde vive.”"
+
+[node name="Dialogo_6" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_6"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_0hjem")
+
+[node name="Label" type="Label" parent="Dialogo_6"]
+layout_mode = 0
+offset_left = -34.0
+offset_top = -7.0
+offset_right = 35.0
+offset_bottom = 7.0
+theme_override_font_sizes/font_size = 10
+text = "Quem sou eu?"

@@ -2,14 +2,14 @@
 
 [ext_resource type="Script" uid="uid://bn1o4j03w2i00" path="res://scripts/puzzle.gd" id="1_fpvee"]
 [ext_resource type="PackedScene" uid="uid://ue78eckyfm44" path="res://cenas/tile.tscn" id="2_e56d5"]
-[ext_resource type="Texture2D" uid="uid://hx7c5s1b6qca" path="res://assets/tiles/tile_1.png" id="3_nohhl"]
-[ext_resource type="Texture2D" uid="uid://cow7wjqpmxf4s" path="res://assets/tiles/tile_2.png" id="4_k5jtt"]
-[ext_resource type="Texture2D" uid="uid://uwyn160gvmd7" path="res://assets/tiles/tile_3.png" id="5_jx8ed"]
-[ext_resource type="Texture2D" uid="uid://so3yb1gonjti" path="res://assets/tiles/tile_4.png" id="6_tmyl6"]
-[ext_resource type="Texture2D" uid="uid://n81bowfnphjm" path="res://assets/tiles/tile_5.png" id="7_o5gy4"]
-[ext_resource type="Texture2D" uid="uid://bwnd57wxl4447" path="res://assets/tiles/tile_6.png" id="8_1ou2r"]
-[ext_resource type="Texture2D" uid="uid://8cvdun81xj4" path="res://assets/tiles/tile_7.png" id="9_2tuvx"]
-[ext_resource type="Texture2D" uid="uid://bqfo50dp7xipq" path="res://assets/tiles/tile_8.png" id="10_ese5h"]
+[ext_resource type="Texture2D" uid="uid://bmd025ju37x3k" path="res://sprites/puzzles/puzzle_1/Untitled183_20260112180507.png" id="3_nohhl"]
+[ext_resource type="Texture2D" uid="uid://cfhnm3u5q7hv" path="res://sprites/puzzles/puzzle_1/Untitled183_20260112180519.png" id="4_k5jtt"]
+[ext_resource type="Texture2D" uid="uid://mf4ubcr57c1o" path="res://sprites/puzzles/puzzle_1/Untitled183_20260112180527.png" id="5_jx8ed"]
+[ext_resource type="Texture2D" uid="uid://dw4cyhts6rg1r" path="res://sprites/puzzles/puzzle_1/Untitled183_20260112180532.png" id="6_tmyl6"]
+[ext_resource type="Texture2D" uid="uid://ccy12i8x8ald6" path="res://sprites/puzzles/puzzle_1/Untitled183_20260112180537.png" id="7_o5gy4"]
+[ext_resource type="Texture2D" uid="uid://tbyitxxl87jl" path="res://sprites/puzzles/puzzle_1/Untitled183_20260112180541.png" id="8_1ou2r"]
+[ext_resource type="Texture2D" uid="uid://dlfee8hrkdfye" path="res://sprites/puzzles/puzzle_1/Untitled183_20260112180546.png" id="9_2tuvx"]
+[ext_resource type="Texture2D" uid="uid://b33esygvq7147" path="res://sprites/puzzles/puzzle_1/Untitled183_20260112180554.png" id="10_ese5h"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_nohhl"]
 
@@ -19,9 +19,10 @@ tile_scene = ExtResource("2_e56d5")
 tile_textures = Array[Texture2D]([ExtResource("3_nohhl"), ExtResource("4_k5jtt"), ExtResource("5_jx8ed"), ExtResource("6_tmyl6"), ExtResource("7_o5gy4"), ExtResource("8_1ou2r"), ExtResource("9_2tuvx"), ExtResource("10_ese5h")])
 
 [node name="Grid" type="Node2D" parent="."]
-position = Vector2(960, 540)
+position = Vector2(834, 397)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = SubResource("CanvasTexture_nohhl")
+metadata/_edit_use_anchors_ = true

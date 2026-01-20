@@ -1,22 +1,23 @@
 [gd_scene load_steps=3 format=3 uid="uid://c8ttym0lvjok4"]
 
-[sub_resource type="Gradient" id="Gradient_c4gls"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_eyvwl"]
-gradient = SubResource("Gradient_c4gls")
+[ext_resource type="Script" uid="uid://mho37k8mqps2" path="res://scripts/dialog_box.gd" id="1_eyvwl"]
+[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="2_p8oex"]
 
 [node name="DialogBox" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_eyvwl")
 
 [node name="Dialogo_1" type="Control" parent="."]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Dialogo_1"]
-scale = Vector2(6.1875, 1.0312499)
-texture = SubResource("GradientTexture2D_eyvwl")
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
 
 [node name="Label" type="Label" parent="Dialogo_1"]
 layout_mode = 0
@@ -29,20 +30,192 @@ text = "Olá! Nosso objetivo é que ao final desta jornada, você possa conhecer
 um pouco mais sobre os direitos e deveres do cidadão brasileiro."
 
 [node name="Dialogo_2" type="Control" parent="."]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Sprite2D" type="Sprite2D" parent="Dialogo_2"]
-scale = Vector2(6.1875, 1.0312499)
-texture = SubResource("GradientTexture2D_eyvwl")
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
 
 [node name="Label" type="Label" parent="Dialogo_2"]
+layout_mode = 0
+offset_left = -183.0
+offset_top = -24.0
+offset_right = 183.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "A ambientação foi baseada no Museu da República, no Palácio do Catete, 
+residência oficial dos Presidentes da República Federativa do Brasil quando 
+o Rio de Janeiro era a capital do Brasil entre os anos de 1889 a 1960."
+
+[node name="Dialogo_3" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_3"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
+
+[node name="Label" type="Label" parent="Dialogo_3"]
 layout_mode = 0
 offset_left = -168.0
 offset_top = -16.0
 offset_right = 170.0
 offset_bottom = 15.0
 theme_override_font_sizes/font_size = 10
-text = "Olá! Nosso objetivo é que ao final desta jornada, você possa conhecer 
-um pouco mais sobre os direitos e deveres do cidadão brasileiro."
+text = "Te convidamos conhecer este importante representante que protege 
+a memória de nosso país."
+
+[node name="Dialogo_4" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_4"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
+
+[node name="Label" type="Label" parent="Dialogo_4"]
+layout_mode = 0
+offset_left = -168.0
+offset_top = -24.0
+offset_right = 170.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Nesta primeira fase aprenderemos sobre o Art. 1º da Constituição 
+Federal de 1988, estabelecendo os fundamentos da República. 
+E então, quer participar dessa aventura?"
+
+[node name="Dialogo_5" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_5"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
+
+[node name="Label" type="Label" parent="Dialogo_5"]
+layout_mode = 0
+offset_left = -174.0
+offset_top = -15.0
+offset_right = 174.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "Para avançar, você precisa procurar a chave que abre o primeiro portal. 
+Para utilizar a chave correta, responda ao seguinte enigma:"
+
+[node name="Dialogo_6" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_6"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
+
+[node name="Label" type="Label" parent="Dialogo_6"]
+layout_mode = 0
+offset_left = -178.0
+offset_top = -24.0
+offset_right = 179.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "“Imagina que sua casa tem regras próprias. Você pode escolher a comida, 
+o estilo, até o que vai rolar na TV. Ninguém de fora mete o bedelho — 
+quem manda ali é sua família. Agora pensa isso em versão país:"
+
+[node name="Dialogo_7" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_7"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
+
+[node name="Label" type="Label" parent="Dialogo_7"]
+layout_mode = 0
+offset_left = -144.0
+offset_top = -7.0
+offset_right = 144.0
+offset_bottom = 7.0
+theme_override_font_sizes/font_size = 10
+text = "eu sou o direito de decidir tudo sem depender de ninguém. "
+
+[node name="Dialogo_8" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_8"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
+
+[node name="Label" type="Label" parent="Dialogo_8"]
+layout_mode = 0
+offset_left = -178.0
+offset_top = -24.0
+offset_right = 179.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Leis? A gente faz. Economia? A gente escolhe. Cultura? A gente vive 
+do nosso jeito. Se outro país tentar mandar em mim… pode parar! 
+Porque eu sou a independência com orgulho.” "
+
+[node name="Dialogo_9" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_9"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
+
+[node name="Label" type="Label" parent="Dialogo_9"]
+layout_mode = 0
+offset_left = -183.0
+offset_top = -16.0
+offset_right = 183.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "A chave se encontra nesta sala. Você deve encontrar a chave e me entregar 
+para que eu possa abrir o primeiro portal."
+
+[node name="Dialogo_10" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_10"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_p8oex")
+
+[node name="Label" type="Label" parent="Dialogo_10"]
+layout_mode = 0
+offset_left = -35.0
+offset_top = -7.0
+offset_right = 34.0
+offset_bottom = 7.0
+theme_override_font_sizes/font_size = 10
+text = "Quem sou eu?"
