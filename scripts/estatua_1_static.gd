@@ -1,4 +1,7 @@
 extends StaticBody2D
 
-func interact():
-	print("Abrir estátua 1")
+@onready var dialog_box: Control = $Dialogo_1/DialogBox
+
+func interact(_player = null):
+	print("INTERACT FOI CHAMADO")
+	dialog_box.next()

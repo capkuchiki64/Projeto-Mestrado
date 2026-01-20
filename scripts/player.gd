@@ -4,6 +4,7 @@ var input_vector: Vector2 = Vector2.ZERO
 var current_speed: float = 300.0
 
 @onready var _sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var inventory = $Inventory
 
 var can_interact: bool = false
 var interact_target: Node = null
@@ -45,5 +46,24 @@ func handle_movement(delta):
 
 
 func _input(event):
-	if event.is_action_pressed("interacao") and can_interact and interact_target:
-		interact_target.interact()
+	if event.is_action_pressed("interacao"):
+		print("Tecla de interação pressionada")
+		
+		if can_interact:
+			print("Pode interagir")
+		else:
+			print("NÃO pode interagir")
+		
+		if interact_target:
+			print("Alvo:", interact_target.name)
+		else:
+			print("Sem alvo")
+
+		if can_interact and interact_target:
+			print("Chamando interact()")
+			interact_target.interact(self)
+
+
+# 🔑 usado pelas estátuas
+func collect_key(color: String):
+	inventory.add_key(color)

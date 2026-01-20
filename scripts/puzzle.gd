@@ -1,5 +1,7 @@
 extends Node2D
 
+signal puzzle_finalizado
+
 @export var tile_scene: PackedScene
 @export var tile_textures: Array[Texture2D]
 
@@ -10,6 +12,7 @@ const GRID_OFFSET: Vector2 = Vector2(-96, -96)
 var empty_pos: Vector2i = Vector2i(2, 2)
 var tiles: Dictionary = {}
 var is_moving: bool = false
+var finished: bool = false # impede finalizar duas vezes
 
 # COMBINAÇÃO ESPECÍFICA DE VITÓRIA
 var victory_layout := {
@@ -39,7 +42,6 @@ func create_grid():
 
 	for y in range(GRID_SIZE):
 		for x in range(GRID_SIZE):
-
 			var pos: Vector2i = Vector2i(x, y)
 			if pos == empty_pos:
 				continue
@@ -51,12 +53,10 @@ func create_grid():
 			tile.grid_pos = pos
 			tile.correct_pos = pos
 
-			# TEXTURA DIFERENTE PARA CADA TILE
 			if id - 1 < tile_textures.size():
 				tile.set_texture(tile_textures[id - 1])
 
 			tile.position = grid_to_world(pos)
-
 			tile.clicked.connect(_on_tile_clicked)
 
 			tiles[pos] = tile
@@ -67,7 +67,7 @@ func create_grid():
 # INPUT
 # =========================
 func _on_tile_clicked(tile):
-	if is_moving:
+	if is_moving or finished:
 		return
 
 	if can_move(tile.grid_pos):
@@ -125,7 +125,7 @@ func grid_to_world(pos: Vector2i) -> Vector2:
 	return Vector2(
 		pos.x * TILE_SIZE,
 		pos.y * TILE_SIZE
-	)
+	) + GRID_OFFSET
 
 
 # =========================
@@ -161,4 +161,10 @@ func check_win():
 		if tile.tile_id != victory_layout[pos]:
 			return
 
+	# SE CHEGOU AQUI, GANHOU
+	finished = true
 	print("🎉 Combinação correta!")
+
+	await get_tree().create_timer(0.5).timeout
+	emit_signal("puzzle_finalizado")
+	queue_free()
