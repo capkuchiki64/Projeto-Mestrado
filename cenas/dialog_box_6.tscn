@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://c583o7mvn8cs5"]
+
+[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="1_v23mg"]
+
+[node name="DialogBox_6" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Dialogo_1" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_v23mg")
+
+[node name="Label" type="Label" parent="Dialogo_1"]
+layout_mode = 0
+offset_left = -157.0
+offset_top = -15.0
+offset_right = 160.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "Parabéns!!! Você acertou o enigma. Esta é a chave da CIDADANIA, 
+que abre o primeiro portal."
+
+[node name="Dialogo_2" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_v23mg")
+
+[node name="Label" type="Label" parent="Dialogo_2"]
+layout_mode = 0
+offset_left = -166.0
+offset_top = -16.0
+offset_right = 165.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Sinto muito, esta não é a chave correta. Você precisa de outra chave 
+para avançar. Continue procurando."

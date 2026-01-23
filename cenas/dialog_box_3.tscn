@@ -1,0 +1,131 @@
+[gd_scene load_steps=2 format=3 uid="uid://pwsc7viqfowx"]
+
+[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="1_3ldjr"]
+
+[node name="DialogBox_3" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Dialogo_1" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_3ldjr")
+
+[node name="Label" type="Label" parent="Dialogo_1"]
+layout_mode = 0
+offset_left = -185.0
+offset_top = -15.0
+offset_right = 186.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "Sou o busto do Ex-Presidente Getúlio Vargas, e guardião do segundo portal. 
+Aqui estão outros ex-presidentes que governaram o Brasil entre 1889 a 1960."
+
+[node name="Dialogo_2" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_3ldjr")
+
+[node name="Label" type="Label" parent="Dialogo_2"]
+layout_mode = 0
+offset_left = -189.0
+offset_top = -16.0
+offset_right = 188.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Se quiser avançar, a chave para o segundo portal também está com 
+algum deles. Para te ajudar a saber qual a chave correta, responda ao enigma:"
+
+[node name="Dialogo_3" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_3"]
+position = Vector2(-111.375, 0)
+scale = Vector2(7.6114035, 0.2114278)
+texture = ExtResource("1_3ldjr")
+
+[node name="Label" type="Label" parent="Dialogo_3"]
+layout_mode = 0
+offset_left = -161.0
+offset_top = -16.0
+offset_right = 161.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "“Sou aquilo que te move quando o despertador toca e você pensa: 
+Aff, queria continuar dormindo... mas bora lá, tenho um objetivo!"
+
+[node name="Dialogo_4" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_4"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_3ldjr")
+
+[node name="Label" type="Label" parent="Dialogo_4"]
+layout_mode = 0
+offset_left = -165.0
+offset_top = -15.0
+offset_right = 164.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "Sou o que faz alguém vender docinho na escola, ou sonhar em abrir 
+uma loja, mesmo começando com pouco."
+
+[node name="Dialogo_5" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_5"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_3ldjr")
+
+[node name="Label" type="Label" parent="Dialogo_5"]
+layout_mode = 0
+offset_left = -169.0
+offset_top = -16.0
+offset_right = 168.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Tô nas mãos de quem rala, corre atrás, inventa, tenta, erra e tenta de 
+novo. Não sou um presente, mas posso te levar longe.”"
+
+[node name="Dialogo_6" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_6"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_3ldjr")
+
+[node name="Label" type="Label" parent="Dialogo_6"]
+layout_mode = 0
+offset_left = -34.0
+offset_top = -6.0
+offset_right = 35.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 10
+text = "Quem sou eu?"

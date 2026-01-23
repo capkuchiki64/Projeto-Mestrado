@@ -1,0 +1,282 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl8mxltm37q5r"]
+
+[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="1_trh5l"]
+
+[node name="DialogBox_9" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Dialogo_1" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_1"]
+layout_mode = 0
+offset_left = -168.0
+offset_top = -15.0
+offset_right = 168.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "Você já parou pra pensar que só por ser uma pessoa, você tem valor? 
+Pois é, isso tem um nome importante: dignidade da pessoa humana. "
+
+[node name="Dialogo_2" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_2"]
+layout_mode = 0
+offset_left = -173.0
+offset_top = -16.0
+offset_right = 174.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Esse é um dos direitos mais importantes que existem, e tá garantido na 
+Constituição Federal de 1988, no artigo 1º, inciso III. "
+
+[node name="Dialogo_3" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_3"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_3"]
+layout_mode = 0
+offset_left = -181.0
+offset_top = -24.0
+offset_right = 180.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "Basicamente, quer dizer que todos — independente de cor, classe social, 
+religião, gênero, ou qualquer outra coisa — deve ser tratado com respeito, 
+como alguém que tem valor só por ser humano."
+
+[node name="Dialogo_4" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_4"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_4"]
+layout_mode = 0
+offset_left = -175.0
+offset_top = -16.0
+offset_right = 176.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Na vida real, isso significa que ninguém pode te humilhar,te tratar como 
+inferior ou te negar direitos só porque você é diferente."
+
+[node name="Dialogo_5" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_5"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_5"]
+layout_mode = 0
+offset_left = -185.0
+offset_top = -16.0
+offset_right = 184.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Também quer dizer que você merece viver com qualidade, estudar, 
+trabalhar, ter acesso à saúde, segurança e tudo que garante uma vida digna."
+
+[node name="Dialogo_6" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_6"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_6"]
+layout_mode = 0
+offset_left = -181.0
+offset_top = -17.0
+offset_right = 180.0
+offset_bottom = 14.0
+theme_override_font_sizes/font_size = 10
+text = "Esse princípio da dignidade está ligado com outros fundamentos do Brasil, 
+que também aparecem no artigo 1º da Constituição. São eles:"
+
+[node name="Dialogo_7" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_7"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_7"]
+layout_mode = 0
+offset_left = -175.0
+offset_top = -7.0
+offset_right = 173.0
+offset_bottom = 7.0
+theme_override_font_sizes/font_size = 10
+text = "• a soberania(o Brasil tem autonomia pra tomar suas próprias decisões),"
+
+[node name="Dialogo_8" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_8"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_8"]
+layout_mode = 0
+offset_left = -165.0
+offset_top = -15.0
+offset_right = 165.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "• a cidadania (as pessoas têm direitos e deveres, e podem participar 
+das decisões do país),"
+
+[node name="Dialogo_9" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_9"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_9"]
+layout_mode = 0
+offset_left = -179.0
+offset_top = -15.0
+offset_right = 179.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "• os valores sociais do trabalho e da livre iniciativa (todo tipo de 
+trabalho deve ser valorizado e as pessoas têm liberdade pra empreender),"
+
+[node name="Dialogo_10" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_10"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_10"]
+layout_mode = 0
+offset_left = -143.0
+offset_top = -15.0
+offset_right = 144.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "• e o pluralismo político (a convivência de diferentes ideias, 
+culturas e opiniões)."
+
+[node name="Dialogo_11" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_11"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_11"]
+layout_mode = 0
+offset_left = -187.0
+offset_top = -15.0
+offset_right = 186.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 10
+text = "Tudo isso forma a base do nosso país. E a dignidade da pessoa humana 
+está no centro disso tudo: não dá pra ter cidadania de verdade sem respeito; "
+
+[node name="Dialogo_12" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_12"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_12"]
+layout_mode = 0
+offset_left = -189.0
+offset_top = -24.0
+offset_right = 190.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 10
+text = "não tem como valorizar o trabalho se quem trabalha não tem uma vida digna; 
+não existe pluralismo se as pessoas não puderem se expressar com liberdade 
+e respeito."
+
+[node name="Dialogo_13" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_13"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_trh5l")
+
+[node name="Label" type="Label" parent="Dialogo_13"]
+layout_mode = 0
+offset_left = -195.0
+offset_top = -32.0
+offset_right = 196.0
+offset_bottom = 33.0
+theme_override_font_sizes/font_size = 9
+text = "Além disso, os princípios de \"igualdade\", \"liberdade\" e \"solidariedade\" também caminham
+juntos, porque se você garante a dignidade das pessoas, está automaticamente 
+garantindo esses outros direitos fundamentais, que são a base para uma 
+sociedade mais justa e igualitária."

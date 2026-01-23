@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6q02pufvxow4"]
+
+[ext_resource type="Texture2D" uid="uid://ntdasik0cfku" path="res://ui/Rectangle 1.png" id="1_fr3nv"]
+[ext_resource type="Texture2D" uid="uid://b688tmbr70s4b" path="res://ui/voltar.png" id="2_ta2ta"]
+[ext_resource type="Script" uid="uid://7pbokm3dn377" path="res://ui/button_return.gd" id="3_dlmjy"]
+[ext_resource type="Texture2D" uid="uid://dm3v2e8mi1330" path="res://ui/Desenvolvido por Caroline Aloca e Matheus Andrade..png" id="4_jbwdj"]
+[ext_resource type="Texture2D" uid="uid://b1ko7fc81bayx" path="res://ui/Derivado do Projeto de Mestrado do Dr. Alexandre Romualdo Mendes..png" id="5_jgghj"]
+
+[node name="Creditos" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -69.0
+offset_right = 2071.0
+offset_bottom = 1080.0
+texture = ExtResource("1_fr3nv")
+
+[node name="Button_Return" type="Button" parent="."]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 96.0
+offset_right = 469.0
+offset_bottom = 209.0
+icon = ExtResource("2_ta2ta")
+flat = true
+script = ExtResource("3_dlmjy")
+
+[node name="DesenvolvidoPorCarolineAlocaEMatheusAndrade_" type="Sprite2D" parent="."]
+position = Vector2(500, 518)
+texture = ExtResource("4_jbwdj")
+
+[node name="DerivadoDoProjetoDeMestradoDoDr_AlexandreRomualdoMendes_" type="Sprite2D" parent="."]
+position = Vector2(1411, 541)
+texture = ExtResource("5_jgghj")
+
+[connection signal="pressed" from="Button_Return" to="Button_Return" method="_on_pressed"]

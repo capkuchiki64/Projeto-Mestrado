@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgtb80vadst2v"]
+
+[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="1_whwou"]
+
+[node name="DialogBox_10" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Dialogo_1" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_whwou")
+
+[node name="Label" type="Label" parent="Dialogo_1"]
+layout_mode = 0
+offset_left = -89.0
+offset_top = -8.0
+offset_right = 89.0
+offset_bottom = 6.0
+theme_override_font_sizes/font_size = 10
+text = "Muito obrigado por jogar nosso jogo!"
+
+[node name="Dialogo_2" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("1_whwou")
+
+[node name="Label" type="Label" parent="Dialogo_2"]
+layout_mode = 0
+offset_left = -114.0
+offset_top = -16.0
+offset_right = 116.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 10
+text = "Não esqueça de responder nosso questionário, 
+e espero que tenha gostado!"
