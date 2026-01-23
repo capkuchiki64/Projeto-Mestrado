@@ -9,7 +9,6 @@ anchors_preset = 0
 script = ExtResource("1_eyvwl")
 
 [node name="Dialogo_1" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -30,7 +29,6 @@ text = "Olá! Nosso objetivo é que ao final desta jornada, você possa conhecer
 um pouco mais sobre os direitos e deveres do cidadão brasileiro."
 
 [node name="Dialogo_2" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -52,7 +50,6 @@ residência oficial dos Presidentes da República Federativa do Brasil quando
 o Rio de Janeiro era a capital do Brasil entre os anos de 1889 a 1960."
 
 [node name="Dialogo_3" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -73,7 +70,6 @@ text = "Te convidamos conhecer este importante representante que protege
 a memória de nosso país."
 
 [node name="Dialogo_4" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -95,7 +91,6 @@ Federal de 1988, estabelecendo os fundamentos da República.
 E então, quer participar dessa aventura?"
 
 [node name="Dialogo_5" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -116,7 +111,6 @@ text = "Para avançar, você precisa procurar a chave que abre o primeiro portal
 Para utilizar a chave correta, responda ao seguinte enigma:"
 
 [node name="Dialogo_6" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -138,7 +132,6 @@ o estilo, até o que vai rolar na TV. Ninguém de fora mete o bedelho —
 quem manda ali é sua família. Agora pensa isso em versão país:"
 
 [node name="Dialogo_7" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -158,7 +151,6 @@ theme_override_font_sizes/font_size = 10
 text = "eu sou o direito de decidir tudo sem depender de ninguém. "
 
 [node name="Dialogo_8" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -180,7 +172,6 @@ do nosso jeito. Se outro país tentar mandar em mim… pode parar!
 Porque eu sou a independência com orgulho.” "
 
 [node name="Dialogo_9" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -201,7 +192,6 @@ text = "A chave se encontra nesta sala. Você deve encontrar a chave e me entreg
 para que eu possa abrir o primeiro portal."
 
 [node name="Dialogo_10" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0

@@ -1,39 +1,32 @@
 extends Control
 
-signal dialogo_finalizado
 signal dialogo_puzzle_chamado
 
-@onready var dialogos := get_children()
-
-var dialog_index: int = 0
-var is_open: bool = false
-
-@export var chama_puzzle: bool = false
+@onready var dialogos: Array = get_children()
+var dialog_index := 0
+var is_open := false
 
 func _ready():
 	visible = false
-	hide_all()
+	_esconder_todos()
 
-func hide_all():
+func _esconder_todos():
 	for d in dialogos:
 		if d is Control:
 			d.visible = false
 
+# =========================
+# DIÁLOGO INICIAL (ESTÁTUA)
+# =========================
 func start():
+	print("📦 DialogBox start() chamado")
 	dialog_index = 0
 	is_open = true
 	visible = true
-	hide_all()
-	_show_current()
+	_esconder_todos()
+	_mostrar_atual()
 
-func start_from(index: int):
-	dialog_index = index
-	is_open = true
-	visible = true
-	hide_all()
-	_show_current()
-
-func _show_current():
+func _mostrar_atual():
 	if dialog_index < dialogos.size():
 		dialogos[dialog_index].visible = true
 	else:
@@ -41,22 +34,21 @@ func _show_current():
 
 func next():
 	if not is_open:
-		start()
-	else:
-		dialog_index += 1
-		hide_all()
-		_show_current()
+		return
+
+	dialog_index += 1
+	_esconder_todos()
+	_mostrar_atual()
 
 func close():
-	hide_all()
-	is_open = false
+	_esconder_todos()
 	visible = false
-	
-	if chama_puzzle:
-		emit_signal("dialogo_puzzle_chamado")
-	else:
-		emit_signal("dialogo_finalizado")
+	is_open = false
+	emit_signal("dialogo_puzzle_chamado")
 
+# =========================
+# INPUT
+# =========================
 func _input(event):
 	if event.is_action_pressed("ui_accept") and is_open:
 		next()
