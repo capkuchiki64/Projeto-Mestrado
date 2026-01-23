@@ -6,18 +6,17 @@
 layout_mode = 3
 anchors_preset = 0
 
-[node name="Dialogo_1" type="Control" parent="."]
-visible = false
+[node name="Dialogo_1_Certo" type="Control" parent="."]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1"]
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1_Certo"]
 position = Vector2(-18, 0)
 scale = Vector2(1.2301258, 0.20502092)
 texture = ExtResource("1_61bju")
 
-[node name="Label" type="Label" parent="Dialogo_1"]
+[node name="Label" type="Label" parent="Dialogo_1_Certo"]
 layout_mode = 0
 offset_left = -138.0
 offset_top = -15.0
@@ -27,17 +26,17 @@ theme_override_font_sizes/font_size = 10
 text = "Parabéns!!! Você acertou o enigma. 
 Esta é a chave da SOBERANIA, que abre o primeiro portal."
 
-[node name="Dialogo_2" type="Control" parent="."]
+[node name="Dialogo_2_Errado" type="Control" parent="."]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2"]
+[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2_Errado"]
 position = Vector2(-18, 0)
 scale = Vector2(1.2301258, 0.20502092)
 texture = ExtResource("1_61bju")
 
-[node name="Label" type="Label" parent="Dialogo_2"]
+[node name="Label" type="Label" parent="Dialogo_2_Errado"]
 layout_mode = 0
 offset_left = -165.0
 offset_top = -16.0

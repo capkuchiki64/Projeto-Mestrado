@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgbrijrpfr0ix"]
+
+[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="2_vaao5"]
+
+[node name="Quest_1" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Pergunta_1" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Pergunta_1"]
+position = Vector2(-18, 0)
+scale = Vector2(1.2301258, 0.20502092)
+texture = ExtResource("2_vaao5")
+
+[node name="Label" type="Label" parent="Pergunta_1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.675
+anchor_top = -0.4
+offset_left = -141.0
+offset_right = -91.0
+offset_bottom = -2.0
+theme_override_font_sizes/font_size = 10
+text = "Utilizar a chave:"

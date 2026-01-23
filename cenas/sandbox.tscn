@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://cnex52q0sfe3n"]
+[gd_scene load_steps=69 format=3 uid="uid://cnex52q0sfe3n"]
 
 [ext_resource type="Script" uid="uid://epg2ys1l5iir" path="res://scripts/andar_1.gd" id="1_3g1k0"]
 [ext_resource type="PackedScene" uid="uid://dftjyjmjsdrl3" path="res://cenas/player.tscn" id="1_75yar"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://66pxj7x3tfnn" path="res://sprites/bandeirante.png" id="9_7oyat"]
 [ext_resource type="Script" uid="uid://dxc4g0ogcjk2f" path="res://scripts/estatua_3_static.gd" id="9_7ua7o"]
 [ext_resource type="Script" uid="uid://cqunae0p3tgpm" path="res://scripts/estatua_2_static.gd" id="10_bhvwi"]
+[ext_resource type="Script" uid="uid://dx0au2x5cn72f" path="res://scripts/estatua_4_static.gd" id="10_d02mj"]
 [ext_resource type="Texture2D" uid="uid://bbkes7t86mknq" path="res://sprites/soldado romano.png" id="10_gycn0"]
 [ext_resource type="Script" uid="uid://b8p48hg5s5uwg" path="res://scripts/estatua_3.gd" id="11_8fy3i"]
 [ext_resource type="Texture2D" uid="uid://d25q7pmgfxici" path="res://sprites/cavalaria (r).png" id="11_81fan"]
@@ -19,6 +20,7 @@
 [ext_resource type="Script" uid="uid://corlibthfaoue" path="res://scripts/estatua_1_static.gd" id="12_81fan"]
 [ext_resource type="Script" uid="uid://cu4y56rskciw3" path="res://scripts/estatua_2.gd" id="12_cfoel"]
 [ext_resource type="Script" uid="uid://chwkrbwd3okan" path="res://scripts/estatua_1.gd" id="12_gycn0"]
+[ext_resource type="Script" uid="uid://ew3unklofc0f" path="res://scripts/estatua_4.gd" id="12_luhxr"]
 [ext_resource type="Texture2D" uid="uid://c7iccpbl1p684" path="res://sprites/cavalaria (l).png" id="13_awqth"]
 [ext_resource type="Texture2D" uid="uid://2jpvh73ymrjn" path="res://sprites/vargas.png" id="14_28pwm"]
 [ext_resource type="Script" uid="uid://dge22k5rerq8a" path="res://scripts/open_puzzle.gd" id="15_gycn0"]
@@ -38,7 +40,15 @@
 [ext_resource type="Texture2D" uid="uid://bdb0lptkhy2q2" path="res://sprites/cidadania.png" id="25_1b23d"]
 [ext_resource type="Texture2D" uid="uid://df0qs360hxf4k" path="res://sprites/pluralismo.png" id="26_akw1u"]
 [ext_resource type="Texture2D" uid="uid://gk8awlf1kiej" path="res://sprites/patria.jpg" id="35_5oafr"]
-[ext_resource type="Script" uid="uid://mho37k8mqps2" path="res://scripts/dialog_box.gd" id="38_vxr6e"]
+[ext_resource type="Script" uid="uid://bt1rgvomu52ts" path="res://scripts/dialog_box_resultado.gd" id="41_prswn"]
+[ext_resource type="Script" uid="uid://df2uwysul2fsi" path="res://scripts/quest_1.gd" id="42_prswn"]
+[ext_resource type="PackedScene" uid="uid://dd3flq4yxmjvp" path="res://cenas/dialog_box_4.tscn" id="42_r6hpr"]
+[ext_resource type="PackedScene" uid="uid://bgbrijrpfr0ix" path="res://cenas/quest_1.tscn" id="42_vy8ws"]
+[ext_resource type="Script" uid="uid://lfssdakb4t17" path="res://scripts/dialog_box_4_resultado.gd" id="43_8qytq"]
+[ext_resource type="Script" uid="uid://ccfa82s6jhki2" path="res://scripts/quest_area_1.gd" id="43_aa7lh"]
+[ext_resource type="Script" uid="uid://bpyyk1c1lrvou" path="res://scripts/quest_area_2.gd" id="45_6btya"]
+[ext_resource type="Script" uid="uid://do64mltctxkpk" path="res://scripts/quest_2.gd" id="45_wtmoy"]
+[ext_resource type="Script" uid="uid://v783ddn4hqdv" path="res://scripts/segundo_andar.gd" id="47_engpd"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_mfpfr"]
 polygon = PackedVector2Array(-412.75168, 589.31335, -377.12958, 590.08777, -377.12958, 743.4176, 321.37326, 744.192, 325.2452, 604.0268, 361.6417, 607.1244, 352.21655, 744.5614, 580.0206, 747.2896, 573.8255, 168.81776, 375.58078, 171.91533, 364.7393, 194.37274, 348.47702, 201.34229, 336.08673, 194.37274, 338.4099, 174.23851, 232.31802, 169.59215, 252.45226, 145.58595, 254.77544, 111.51265, 572.2767, 113.06143, 569.95355, -82.08569, 554.46564, -78.98813, 525.8131, -83.63448, 246.2571, -86.732056, 241.61075, -13.164686, 216.83015, -12.390293, 207.53743, -214.50696, 234.6412, -195.14713, 243.15953, -115.38461, 568.4047, -109.96386, 560.6608, -648.1673, -442.17862, -658.2344, -590.08777, -655.13684, -592.41095, 743.4176, -385.64792, 742.64325, -386.4223, 767.4238, -613.3196, 765.87506, -613.3196, -674.49664, 581.5694, -672.9479, 598.6061, 763.5519, -380.22714, 767.4238, -380.22714, 744.96643, -412.75168, 742.64325)
@@ -59,7 +69,7 @@ radius = 25.566784
 radius = 119.0042
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_81fan"]
-radius = 119.52496
+radius = 149.96666
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v3yj5"]
 size = Vector2(138, 139)
@@ -85,7 +95,19 @@ size = Vector2(1732, 134)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vy8ws"]
 size = Vector2(1786, 86)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_prswn"]
+radius = 148.01352
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtmoy"]
+size = Vector2(148, 148)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_prswn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r83s4"]
+size = Vector2(280, 153)
+
 [node name="Sandbox" type="Node2D"]
+z_index = 3
 script = ExtResource("1_3g1k0")
 puzzle_scene = ExtResource("2_03bru")
 
@@ -459,7 +481,7 @@ texture = ExtResource("5_mcr5q")
 
 [node name="Player" parent="." instance=ExtResource("1_75yar")]
 position = Vector2(617, 475)
-collision_mask = 34
+collision_mask = 38
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
@@ -470,6 +492,8 @@ script = ExtResource("7_akw1u")
 
 [node name="Estatua 4" type="StaticBody2D" parent="Estatuas"]
 position = Vector2(5, -182)
+collision_layer = 2
+script = ExtResource("10_d02mj")
 
 [node name="Atrito" type="CollisionShape2D" parent="Estatuas/Estatua 4"]
 shape = SubResource("CircleShape2D_x5eif")
@@ -478,6 +502,14 @@ shape = SubResource("CircleShape2D_x5eif")
 z_index = -4
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("9_7oyat")
+
+[node name="Area2D" type="Area2D" parent="Estatuas/Estatua 4"]
+collision_layer = 4
+script = ExtResource("12_luhxr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Estatuas/Estatua 4/Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_81fan")
 
 [node name="Estatua 3" type="StaticBody2D" parent="Estatuas"]
 position = Vector2(400, 850)
@@ -545,6 +577,7 @@ shape = SubResource("CircleShape2D_81fan")
 [node name="Dialogo_1" type="CanvasLayer" parent="Estatuas/Estatua_1"]
 
 [node name="DialogBox" parent="Estatuas/Estatua_1/Dialogo_1" instance=ExtResource("16_81fan")]
+visible = false
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -553,7 +586,6 @@ anchor_bottom = 1.0
 offset_top = -200.0
 grow_horizontal = 2
 grow_vertical = 0
-chama_puzzle = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Estatua 5" type="StaticBody2D" parent="Estatuas"]
@@ -606,8 +638,8 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_top = -188.0
-offset_bottom = -188.0
+offset_top = -199.0
+offset_bottom = -199.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("19_h6yjo")
@@ -696,14 +728,28 @@ texture = ExtResource("35_5oafr")
 [node name="Dialogo_1" type="CanvasLayer" parent="."]
 
 [node name="DialogBox_2" parent="Dialogo_1" instance=ExtResource("18_v3yj5")]
-script = ExtResource("38_vxr6e")
-chama_puzzle = true
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -428.0
+offset_bottom = -428.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("41_prswn")
+metadata/_edit_use_anchors_ = true
+
+[node name="Dialogo_2" type="CanvasLayer" parent="."]
+
+[node name="DialogBox_4" parent="Dialogo_2" instance=ExtResource("42_r6hpr")]
+script = ExtResource("43_8qytq")
 
 [node name="Colisoes" type="Node" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Colisoes"]
 position = Vector2(833, -62)
-collision_mask = 32
+collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Colisoes/StaticBody2D"]
 position = Vector2(0, 113.5)
@@ -711,7 +757,7 @@ shape = SubResource("RectangleShape2D_03bru")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Colisoes"]
 position = Vector2(-846, 0)
-collision_mask = 32
+collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Colisoes/StaticBody2D2"]
 position = Vector2(0, 126.5)
@@ -719,18 +765,161 @@ shape = SubResource("RectangleShape2D_d02mj")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Colisoes"]
 position = Vector2(0, -887)
-collision_mask = 32
+collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Colisoes/StaticBody2D3"]
 shape = SubResource("RectangleShape2D_luhxr")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="Colisoes"]
 position = Vector2(0, 1074)
-collision_mask = 32
+collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Colisoes/StaticBody2D4"]
 shape = SubResource("RectangleShape2D_vy8ws")
 
+[node name="Quest_1" type="CanvasLayer" parent="."]
+script = ExtResource("42_prswn")
+
+[node name="Quest_1" parent="Quest_1" instance=ExtResource("42_vy8ws")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -404.0
+offset_bottom = -404.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Amarela" type="Button" parent="Quest_1/Quest_1"]
+layout_mode = 0
+offset_left = -77.0
+offset_top = -32.0
+offset_right = 1663.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("23_h6yjo")
+metadata/_edit_use_anchors_ = true
+
+[node name="Azul" type="Button" parent="Quest_1/Quest_1"]
+layout_mode = 0
+offset_left = -14.000008
+offset_top = -32.0
+offset_right = 1726.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("24_2iqo4")
+metadata/_edit_use_anchors_ = true
+
+[node name="Verde" type="Button" parent="Quest_1/Quest_1"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = -32.0
+offset_right = 1789.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("25_1b23d")
+metadata/_edit_use_anchors_ = true
+
+[node name="Colorida" type="Button" parent="Quest_1/Quest_1"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = -32.0
+offset_right = 1852.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("26_akw1u")
+metadata/_edit_use_anchors_ = true
+
+[node name="QuestArea_1" type="Area2D" parent="Quest_1" node_paths=PackedStringArray("quest")]
+collision_layer = 4
+script = ExtResource("43_aa7lh")
+quest = NodePath("..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Quest_1/QuestArea_1"]
+position = Vector2(-411, 901)
+shape = SubResource("CircleShape2D_prswn")
+
+[node name="Quest_2" type="CanvasLayer" parent="."]
+script = ExtResource("45_wtmoy")
+
+[node name="Quest_1" parent="Quest_2" instance=ExtResource("42_vy8ws")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -404.0
+offset_bottom = -404.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Amarela" type="Button" parent="Quest_2/Quest_1"]
+layout_mode = 0
+offset_left = -77.0
+offset_top = -32.0
+offset_right = 1663.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("23_h6yjo")
+metadata/_edit_use_anchors_ = true
+
+[node name="Azul" type="Button" parent="Quest_2/Quest_1"]
+layout_mode = 0
+offset_left = -14.000008
+offset_top = -32.0
+offset_right = 1726.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("24_2iqo4")
+metadata/_edit_use_anchors_ = true
+
+[node name="Verde" type="Button" parent="Quest_2/Quest_1"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = -32.0
+offset_right = 1789.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("25_1b23d")
+metadata/_edit_use_anchors_ = true
+
+[node name="Colorida" type="Button" parent="Quest_2/Quest_1"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = -32.0
+offset_right = 1852.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("26_akw1u")
+metadata/_edit_use_anchors_ = true
+
+[node name="QuestArea_2" type="Area2D" parent="Quest_2" node_paths=PackedStringArray("quest")]
+position = Vector2(6, -877)
+collision_layer = 4
+script = ExtResource("45_6btya")
+quest = NodePath("..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Quest_2/QuestArea_2"]
+position = Vector2(-419, 900)
+shape = SubResource("RectangleShape2D_wtmoy")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_prswn")
+
+[node name="SegundoAndar" type="Area2D" parent="."]
+script = ExtResource("47_engpd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SegundoAndar"]
+position = Vector2(622, -725.5)
+shape = SubResource("RectangleShape2D_r83s4")
+
+[connection signal="body_entered" from="Estatuas/Estatua 4/Area2D" to="Estatuas/Estatua 4/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Estatuas/Estatua 4/Area2D" to="Estatuas/Estatua 4/Area2D" method="_on_body_exited"]
 [connection signal="body_entered" from="Estatuas/Estatua 3/Area2D" to="Estatuas/Estatua 3/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Estatuas/Estatua 3/Area2D" to="Estatuas/Estatua 3/Area2D" method="_on_body_exited"]
 [connection signal="body_entered" from="Estatuas/Estatua 2/Area2D" to="Estatuas/Estatua 2/Area2D" method="_on_body_entered"]
@@ -743,3 +932,6 @@ shape = SubResource("RectangleShape2D_vy8ws")
 [connection signal="body_exited" from="Estatuas/Getulio/Area2D" to="Estatuas/Getulio/Area2D" method="_on_body_exited"]
 [connection signal="body_entered" from="OpenPuzzle" to="OpenPuzzle" method="_on_body_entered"]
 [connection signal="body_exited" from="OpenPuzzle" to="OpenPuzzle" method="_on_body_exited"]
+[connection signal="body_entered" from="Quest_1/QuestArea_1" to="Quest_1/QuestArea_1" method="_on_body_entered"]
+[connection signal="body_entered" from="Quest_2/QuestArea_2" to="Quest_2/QuestArea_2" method="_on_body_entered"]
+[connection signal="body_entered" from="SegundoAndar" to="SegundoAndar" method="_on_body_entered"]
