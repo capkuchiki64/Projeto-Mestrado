@@ -1,0 +1,208 @@
+extends Node2D
+
+signal puzzle_finalizado
+
+@export var tile_scene: PackedScene
+@export var tile_textures: Array[Texture2D]
+
+const GRID_SIZE: int = 3
+
+# TAMANHO REAL DOS TILES
+const TILE_WIDTH: int = 448
+const TILE_HEIGHT: int = 316
+
+var grid_offset: Vector2
+
+
+# posição lógica do vazio
+var empty_pos: Vector2i = Vector2i(2, 2)
+
+var tiles: Dictionary = {}
+var is_moving: bool = false
+var finished: bool = false
+
+# tile visual do vazio
+var empty_tile
+
+
+# COMBINAÇÃO DE VITÓRIA (SEM O TILE VAZIO)
+var victory_layout := {
+	Vector2i(0,0): 1,
+	Vector2i(1,0): 2,
+	Vector2i(2,0): 3,
+	Vector2i(0,1): 4,
+	Vector2i(1,1): 5,
+	Vector2i(2,1): 6,
+	Vector2i(0,2): 7,
+	Vector2i(1,2): 8
+}
+
+@onready var grid: Node2D = $Grid
+
+
+func _ready():
+	grid_offset = Vector2(
+		-(GRID_SIZE * TILE_WIDTH) / 2,
+		-(GRID_SIZE * TILE_HEIGHT) / 2
+	)
+	create_grid()
+	shuffle(60)
+
+
+# =========================
+# CRIAÇÃO DO GRID
+# =========================
+func create_grid():
+	var id: int = 1
+
+	for y in range(GRID_SIZE):
+		for x in range(GRID_SIZE):
+			var pos: Vector2i = Vector2i(x, y)
+
+			# TILE VISUAL DO VAZIO
+			if pos == empty_pos:
+				empty_tile = tile_scene.instantiate()
+				grid.add_child(empty_tile)
+
+				empty_tile.is_empty = true
+				empty_tile.tile_id = 8
+				empty_tile.grid_pos = pos
+				empty_tile.correct_pos = pos
+
+				if tile_textures.size() >= 8:
+					empty_tile.set_texture(tile_textures[7])
+
+				empty_tile.position = grid_to_world(pos)
+				continue
+
+			# TILES NORMAIS
+			var tile = tile_scene.instantiate()
+			grid.add_child(tile)
+
+			tile.tile_id = id
+			tile.grid_pos = pos
+			tile.correct_pos = pos
+
+			if id - 1 < tile_textures.size():
+				tile.set_texture(tile_textures[id - 1])
+
+			tile.position = grid_to_world(pos)
+			tile.clicked.connect(_on_tile_clicked)
+
+			tiles[pos] = tile
+			id += 1
+
+
+# =========================
+# INPUT
+# =========================
+func _on_tile_clicked(tile):
+	if is_moving or finished:
+		return
+
+	if can_move(tile.grid_pos):
+		move_tile(tile)
+
+
+# =========================
+# MOVIMENTO
+# =========================
+func can_move(tile_pos: Vector2i) -> bool:
+	var diff: Vector2i = tile_pos - empty_pos
+	return abs(diff.x) + abs(diff.y) == 1
+
+
+func move_tile(tile):
+	is_moving = true
+
+	var old_pos: Vector2i = tile.grid_pos
+	tiles.erase(old_pos)
+
+	tile.grid_pos = empty_pos
+	var target_pos: Vector2 = grid_to_world(empty_pos)
+
+	var tween := create_tween()
+	tween.set_trans(Tween.TRANS_LINEAR)
+	tween.tween_property(tile, "position", target_pos, 0.03)
+
+	empty_pos = old_pos
+	tiles[tile.grid_pos] = tile
+	update_empty_tile()
+
+	tween.finished.connect(func():
+		is_moving = false
+		check_win()
+	)
+
+
+# =========================
+# MOVIMENTO INSTANTÂNEO
+# =========================
+func move_tile_instant(tile):
+	var old_pos: Vector2i = tile.grid_pos
+	tiles.erase(old_pos)
+
+	tile.grid_pos = empty_pos
+	tile.position = grid_to_world(empty_pos)
+
+	empty_pos = old_pos
+	tiles[tile.grid_pos] = tile
+	update_empty_tile()
+
+
+# =========================
+# ATUALIZA TILE VAZIO
+# =========================
+func update_empty_tile():
+	if empty_tile:
+		empty_tile.position = grid_to_world(empty_pos)
+
+
+# =========================
+# GRID → MUNDO
+# =========================
+func grid_to_world(pos: Vector2i) -> Vector2:
+	return Vector2(
+		pos.x * TILE_WIDTH,
+		pos.y * TILE_HEIGHT
+	) + grid_offset
+
+# =========================
+# EMBARALHAR
+# =========================
+func shuffle(moves: int):
+	for i in range(moves):
+		var neighbors: Array = []
+
+		for dir in [
+			Vector2i.UP,
+			Vector2i.DOWN,
+			Vector2i.LEFT,
+			Vector2i.RIGHT
+		]:
+			var pos: Vector2i = empty_pos + dir
+			if tiles.has(pos):
+				neighbors.append(tiles[pos])
+
+		if neighbors.size() > 0:
+			move_tile_instant(neighbors.pick_random())
+
+
+# =========================
+# CONDIÇÃO DE VITÓRIA
+# =========================
+func check_win():
+	for pos in victory_layout.keys():
+		if not tiles.has(pos):
+			return
+
+		var tile = tiles[pos]
+		if tile.tile_id != victory_layout[pos]:
+			return
+
+	finished = true
+	print("🎉 Combinação correta!")
+
+	await get_tree().create_timer(0.5).timeout
+	emit_signal("puzzle_finalizado3")
+	queue_free()
