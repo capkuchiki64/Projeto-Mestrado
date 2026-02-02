@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="2_vaao5"]
 
-[node name="Quest_1" type="Control"]
+[node name="Quest_4" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 

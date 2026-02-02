@@ -1,36 +1,215 @@
-[gd_scene load_steps=3 format=3 uid="uid://brfv2filwv3pj"]
+[gd_scene load_steps=28 format=3 uid="uid://brfv2filwv3pj"]
 
 [ext_resource type="PackedScene" uid="uid://dftjyjmjsdrl3" path="res://cenas/player.tscn" id="1_cm0fp"]
+[ext_resource type="Texture2D" uid="uid://smtfwdlvvhws" path="res://sprites/segundo_andar.png" id="2_2salg"]
+[ext_resource type="Texture2D" uid="uid://b01y3ap63gsfe" path="res://sprites/venus.png" id="3_n4235"]
+[ext_resource type="Texture2D" uid="uid://nxgi4annawe1" path="res://sprites/interaja.png" id="4_f4v1c"]
+[ext_resource type="Script" uid="uid://dnmk0mdhgfm85" path="res://scripts/final.gd" id="5_fawfd"]
+[ext_resource type="Script" uid="uid://b6ixdh4lg61ix" path="res://scripts/inventory.gd" id="6_m5iyj"]
+[ext_resource type="PackedScene" uid="uid://b74tt3ll14263" path="res://cenas/dialog_box_7.tscn" id="7_0itsn"]
+[ext_resource type="Script" uid="uid://dc8ky6txhkexq" path="res://scripts/dialog_venus.gd" id="7_i16nu"]
+[ext_resource type="Script" uid="uid://rsemogpd5am5" path="res://scripts/dialog_box_7.gd" id="8_i16nu"]
+[ext_resource type="AudioStream" uid="uid://d13u3yis7wt3n" path="res://audios/gdr music.ogg" id="10_jrx5d"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="11_t3r1a"]
+[ext_resource type="Script" uid="uid://8xgda1grqwvw" path="res://scripts/quest_4.gd" id="12_5sdwf"]
+[ext_resource type="PackedScene" uid="uid://bgbrijrpfr0ix" path="res://cenas/quest_1.tscn" id="13_c8wdg"]
+[ext_resource type="Texture2D" uid="uid://cgdt8wnynthwr" path="res://sprites/soberania.png" id="14_v4uf3"]
+[ext_resource type="Texture2D" uid="uid://cwtra5lbkgtpv" path="res://sprites/trabalho.png" id="15_5p50t"]
+[ext_resource type="Texture2D" uid="uid://bdb0lptkhy2q2" path="res://sprites/cidadania.png" id="16_0ovoa"]
+[ext_resource type="Texture2D" uid="uid://df0qs360hxf4k" path="res://sprites/pluralismo.png" id="17_ur0vc"]
+[ext_resource type="Script" uid="uid://cptymmnfnhw3n" path="res://scripts/quest_area_4.gd" id="18_ji4pv"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_qhtow"]
-radius = 41.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fawfd"]
+size = Vector2(102, 1971)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m5iyj"]
+size = Vector2(130, 1899)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pes30"]
+size = Vector2(1732, 134)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0itsn"]
+size = Vector2(1786, 86)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i16nu"]
+size = Vector2(112, 106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jrx5d"]
+size = Vector2(280, 166)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t3r1a"]
+size = Vector2(662, 216)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4xslm"]
+size = Vector2(420, 153)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31yb4"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Player3" type="CharacterBody2D" parent="." groups=["player"]]
-visible = false
-position = Vector2(0, 800)
-collision_layer = 255
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_2salg")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player3"]
-shape = SubResource("CircleShape2D_qhtow")
+[node name="Venus" type="Sprite2D" parent="."]
+position = Vector2(30, -540)
+scale = Vector2(0.05494505, 0.05494506)
+texture = ExtResource("3_n4235")
 
-[node name="Sprite2D" type="Sprite2D" parent="Player3"]
+[node name="Colisoes" type="Node" parent="."]
 
-[node name="Camera2D" type="Camera2D" parent="Player3"]
-zoom = Vector2(0.5, 0.5)
-position_smoothing_enabled = true
-position_smoothing_speed = 1.0
+[node name="StaticBody2D" type="StaticBody2D" parent="Colisoes"]
+position = Vector2(833, -62)
+collision_layer = 32
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Player3/Camera2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Colisoes/StaticBody2D"]
+position = Vector2(-223, 113.5)
+shape = SubResource("RectangleShape2D_fawfd")
 
-[node name="Interacao" type="Button" parent="Player3/Camera2D/CanvasLayer"]
-offset_right = 8.0
-offset_bottom = 8.0
-metadata/_edit_use_anchors_ = true
+[node name="StaticBody2D2" type="StaticBody2D" parent="Colisoes"]
+position = Vector2(-846, 0)
+collision_layer = 32
 
-[node name="Walking" type="AudioStreamPlayer2D" parent="Player3"]
-volume_db = 8.078
-autoplay = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Colisoes/StaticBody2D2"]
+position = Vector2(231, 126.5)
+shape = SubResource("RectangleShape2D_m5iyj")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Colisoes"]
+position = Vector2(0, -887)
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Colisoes/StaticBody2D3"]
+position = Vector2(0, 254)
+shape = SubResource("RectangleShape2D_pes30")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Colisoes"]
+position = Vector2(0, 1074)
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Colisoes/StaticBody2D4"]
+position = Vector2(0, -396)
+shape = SubResource("RectangleShape2D_0itsn")
+
+[node name="Btn_Interacao" type="CanvasLayer" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Btn_Interacao"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Btn_Interacao/Area2D"]
+position = Vector2(129, 584)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_f4v1c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Btn_Interacao/Area2D"]
+position = Vector2(121, 585)
+shape = SubResource("RectangleShape2D_i16nu")
+
+[node name="Final" type="Area2D" parent="."]
+script = ExtResource("5_fawfd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Final"]
+position = Vector2(21, 435)
+shape = SubResource("RectangleShape2D_jrx5d")
 
 [node name="Player" parent="." instance=ExtResource("1_cm0fp")]
+position = Vector2(366, -171)
+collision_mask = 38
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="Inventory" type="Node" parent="Player"]
+script = ExtResource("6_m5iyj")
+
+[node name="Dialog_Venus" type="Area2D" parent="."]
+script = ExtResource("7_i16nu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dialog_Venus"]
+position = Vector2(18, -458)
+shape = SubResource("RectangleShape2D_t3r1a")
+
+[node name="DialogBox_7" parent="Dialog_Venus" instance=ExtResource("7_0itsn")]
+script = ExtResource("8_i16nu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_jrx5d")
+autoplay = true
+
+[node name="Joystick" type="CanvasLayer" parent="."]
+
+[node name="Virtual Joystick" parent="Joystick" instance=ExtResource("11_t3r1a")]
+action_left = "esquerda"
+action_right = "direita"
+action_up = "cima"
+action_down = "baixo"
+metadata/_edit_use_anchors_ = true
+
+[node name="Quest_4" type="CanvasLayer" parent="."]
+script = ExtResource("12_5sdwf")
+
+[node name="Quest_4" parent="Quest_4" instance=ExtResource("13_c8wdg")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -1006.0
+offset_bottom = -1006.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Amarela" type="Button" parent="Quest_4/Quest_4"]
+layout_mode = 0
+offset_left = -77.0
+offset_top = -32.0
+offset_right = 1663.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("14_v4uf3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Azul" type="Button" parent="Quest_4/Quest_4"]
+layout_mode = 0
+offset_left = -14.000008
+offset_top = -32.0
+offset_right = 1726.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("15_5p50t")
+metadata/_edit_use_anchors_ = true
+
+[node name="Verde" type="Button" parent="Quest_4/Quest_4"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = -32.0
+offset_right = 1789.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("16_0ovoa")
+metadata/_edit_use_anchors_ = true
+
+[node name="Colorida" type="Button" parent="Quest_4/Quest_4"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = -32.0
+offset_right = 1852.0
+offset_bottom = 1708.0
+scale = Vector2(0.036, 0.036)
+icon = ExtResource("17_ur0vc")
+metadata/_edit_use_anchors_ = true
+
+[node name="QuestArea_4" type="Area2D" parent="Quest_4" node_paths=PackedStringArray("quest")]
+position = Vector2(6, -877)
+collision_layer = 4
+script = ExtResource("18_ji4pv")
+quest = NodePath("..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Quest_4/QuestArea_4"]
+position = Vector2(10, 79.5)
+shape = SubResource("RectangleShape2D_4xslm")
+
+[node name="Area2D3" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+shape = SubResource("RectangleShape2D_31yb4")
+
+[connection signal="body_entered" from="Final" to="Final" method="_on_body_entered"]
+[connection signal="body_entered" from="Quest_4/QuestArea_4" to="Quest_4/QuestArea_4" method="_on_body_entered"]

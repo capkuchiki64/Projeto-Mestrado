@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=3 uid="uid://cnex52q0sfe3n"]
+[gd_scene load_steps=80 format=3 uid="uid://cnex52q0sfe3n"]
 
 [ext_resource type="Script" uid="uid://epg2ys1l5iir" path="res://scripts/andar_1.gd" id="1_3g1k0"]
 [ext_resource type="PackedScene" uid="uid://dftjyjmjsdrl3" path="res://cenas/player.tscn" id="1_75yar"]
@@ -6,8 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://bjw7thwurbvjv" path="res://cenas/puzzle.tscn" id="2_03bru"]
 [ext_resource type="Texture2D" uid="uid://c4mo8eboo5nei" path="res://sprites/luzjanela.png" id="2_m6a0s"]
 [ext_resource type="Texture2D" uid="uid://diwdwdrmp2gtp" path="res://sprites/porta.png" id="3_5d6dv"]
-[ext_resource type="PackedScene" uid="uid://d04l8qw88763t" path="res://cenas/puzzle_2.tscn" id="3_xofgm"]
-[ext_resource type="PackedScene" uid="uid://dehpqf5e1uw7k" path="res://cenas/puzzle_3.tscn" id="4_80q48"]
 [ext_resource type="Texture2D" uid="uid://d1kj31bge03t4" path="res://sprites/luzposte.png" id="4_hh8g8"]
 [ext_resource type="Texture2D" uid="uid://cifcc7ycbafg6" path="res://sprites/poste.png" id="5_mcr5q"]
 [ext_resource type="Script" uid="uid://b6ixdh4lg61ix" path="res://scripts/inventory.gd" id="7_akw1u"]
@@ -46,8 +44,7 @@
 [ext_resource type="PackedScene" uid="uid://b8lhr3ywkxh6v" path="res://cenas/dialog_box_5.tscn" id="33_dkhkr"]
 [ext_resource type="Texture2D" uid="uid://gk8awlf1kiej" path="res://sprites/patria.jpg" id="35_5oafr"]
 [ext_resource type="Script" uid="uid://mqucugqof2a4" path="res://scripts/dialog_box_5.gd" id="35_6qsoi"]
-[ext_resource type="Texture2D" uid="uid://c3hwpu26yuwho" path="res://sprites/escada_fechada.png" id="37_hyhgn"]
-[ext_resource type="Script" uid="uid://cbu7s1x004vvt" path="res://scripts/btn_interacao_pressed.gd" id="40_aygc7"]
+[ext_resource type="Texture2D" uid="uid://cmc0tbs6pcw1u" path="res://sprites/escada.png" id="37_wwj2j"]
 [ext_resource type="Script" uid="uid://bt1rgvomu52ts" path="res://scripts/dialog_box_resultado.gd" id="41_prswn"]
 [ext_resource type="Script" uid="uid://df2uwysul2fsi" path="res://scripts/quest_1.gd" id="42_prswn"]
 [ext_resource type="PackedScene" uid="uid://dd3flq4yxmjvp" path="res://cenas/dialog_box_4.tscn" id="42_r6hpr"]
@@ -61,9 +58,6 @@
 [ext_resource type="Script" uid="uid://b8jhuxlug2m2k" path="res://scripts/quest_area_3.gd" id="50_iwe0e"]
 [ext_resource type="Script" uid="uid://8xgda1grqwvw" path="res://scripts/quest_4.gd" id="51_4bopt"]
 [ext_resource type="Script" uid="uid://cptymmnfnhw3n" path="res://scripts/quest_area_4.gd" id="52_bhpof"]
-[ext_resource type="Texture2D" uid="uid://b8ky4h0jhjnw2" path="res://sprites/escada_aberta.png" id="59_xofgm"]
-[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="61_80q48"]
-[ext_resource type="AudioStream" uid="uid://d13u3yis7wt3n" path="res://audios/gdr music.ogg" id="64_35hmr"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_mfpfr"]
 polygon = PackedVector2Array(-412.75168, 589.31335, -377.12958, 590.08777, -377.12958, 743.4176, 321.37326, 744.192, 325.2452, 604.0268, 361.6417, 607.1244, 352.21655, 744.5614, 580.0206, 747.2896, 573.8255, 168.81776, 375.58078, 171.91533, 364.7393, 194.37274, 348.47702, 201.34229, 336.08673, 194.37274, 338.4099, 174.23851, 232.31802, 169.59215, 252.45226, 145.58595, 254.77544, 111.51265, 572.2767, 113.06143, 569.95355, -82.08569, 554.46564, -78.98813, 525.8131, -83.63448, 246.2571, -86.732056, 241.61075, -13.164686, 216.83015, -12.390293, 207.53743, -214.50696, 234.6412, -195.14713, 243.15953, -115.38461, 568.4047, -109.96386, 560.6608, -648.1673, -442.17862, -658.2344, -590.08777, -655.13684, -592.41095, 743.4176, -385.64792, 742.64325, -386.4223, 767.4238, -613.3196, 765.87506, -613.3196, -674.49664, 581.5694, -672.9479, 598.6061, 763.5519, -380.22714, 767.4238, -380.22714, 744.96643, -412.75168, 742.64325)
@@ -90,7 +84,7 @@ radius = 149.96666
 size = Vector2(138, 139)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_28pwm"]
-size = Vector2(426, 198)
+size = Vector2(432, 138)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gycn0"]
 size = Vector2(282, 312)
@@ -125,11 +119,12 @@ radius = 151.72673
 size = Vector2(420, 153)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r83s4"]
-size = Vector2(434, 414)
+size = Vector2(89, 140)
 
 [node name="Sandbox" type="Node2D"]
 z_index = 3
 script = ExtResource("1_3g1k0")
+puzzle_scene = ExtResource("2_03bru")
 
 [node name="Fundo1" type="Sprite2D" parent="."]
 z_index = -8
@@ -556,7 +551,6 @@ position = Vector2(412, 332)
 scale = Vector2(0.9, 0.9)
 collision_layer = 2
 script = ExtResource("10_bhvwi")
-puzzle_scene = ExtResource("3_xofgm")
 
 [node name="Atrito" type="CollisionShape2D" parent="Estatuas/Estatua_2"]
 scale = Vector2(0.9, 0.9)
@@ -614,7 +608,6 @@ position = Vector2(-413.00006, 322)
 scale = Vector2(0.80999994, 0.80999994)
 collision_layer = 2
 script = ExtResource("15_k6ya5")
-puzzle_scene = ExtResource("2_03bru")
 
 [node name="Atrito" type="CollisionShape2D" parent="Estatuas/Estatua_5"]
 scale = Vector2(0.9, 0.9)
@@ -669,7 +662,6 @@ script = ExtResource("19_h6yjo")
 [node name="Patria" type="StaticBody2D" parent="Estatuas"]
 position = Vector2(-413, 23)
 script = ExtResource("31_yyqxe")
-puzzle_scene = ExtResource("4_80q48")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Estatuas/Patria"]
 position = Vector2(0, 0.5)
@@ -707,16 +699,14 @@ position = Vector2(22, 146)
 collision_layer = 8
 script = ExtResource("15_gycn0")
 
+[node name="Sprite2D" type="Sprite2D" parent="OpenPuzzle"]
+position = Vector2(-31, 18)
+texture = ExtResource("37_wwj2j")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OpenPuzzle"]
 shape = SubResource("RectangleShape2D_gycn0")
 
-[node name="Sprite2D" type="Sprite2D" parent="OpenPuzzle"]
-position = Vector2(-31, 18)
-texture = ExtResource("37_hyhgn")
-
 [node name="Btn_Interacao" type="CanvasLayer" parent="."]
-
-[node name="TouchScreenButton" type="TouchScreenButton" parent="Btn_Interacao"]
 
 [node name="Area2D" type="Area2D" parent="Btn_Interacao"]
 
@@ -729,12 +719,7 @@ texture = ExtResource("17_6u4a5")
 position = Vector2(121, 585)
 shape = SubResource("RectangleShape2D_awqth")
 
-[node name="Btn_Interacao_Pressed" type="Button" parent="Btn_Interacao"]
-offset_left = 65.0
-offset_top = 532.0
-offset_right = 178.0
-offset_bottom = 638.0
-script = ExtResource("40_aygc7")
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Btn_Interacao"]
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -809,7 +794,6 @@ metadata/_edit_use_anchors_ = true
 [node name="Dialogo_2" type="CanvasLayer" parent="."]
 
 [node name="DialogBox_4" parent="Dialogo_2" instance=ExtResource("42_r6hpr")]
-visible = false
 script = ExtResource("43_8qytq")
 
 [node name="Colisoes" type="Node" parent="."]
@@ -1061,25 +1045,9 @@ shape = SubResource("RectangleShape2D_prswn")
 [node name="SegundoAndar" type="Area2D" parent="."]
 script = ExtResource("47_engpd")
 
-[node name="Sprite2D" type="Sprite2D" parent="SegundoAndar"]
-position = Vector2(-3, 162)
-texture = ExtResource("59_xofgm")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SegundoAndar"]
-position = Vector2(24, 111)
+position = Vector2(717.5, -732)
 shape = SubResource("RectangleShape2D_r83s4")
-
-[node name="Joystick" type="CanvasLayer" parent="."]
-
-[node name="Virtual Joystick" parent="Joystick" instance=ExtResource("61_80q48")]
-action_left = "esquerda"
-action_right = "direita"
-action_up = "cima"
-action_down = "baixo"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("64_35hmr")
-autoplay = true
 
 [connection signal="body_entered" from="Estatuas/Estatua_4/Area2D" to="Estatuas/Estatua_4/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Estatuas/Estatua_4/Area2D" to="Estatuas/Estatua_4/Area2D" method="_on_body_exited"]
@@ -1093,12 +1061,10 @@ autoplay = true
 [connection signal="body_exited" from="Estatuas/Estatua_5/Area2D" to="Estatuas/Estatua_5/Area2D" method="_on_body_exited"]
 [connection signal="body_entered" from="Estatuas/Getulio/Area2D" to="Estatuas/Getulio/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Estatuas/Getulio/Area2D" to="Estatuas/Getulio/Area2D" method="_on_body_exited"]
-[connection signal="segundo_andar_liberado" from="Estatuas/Patria" to="SegundoAndar" method="_on_patria_segundo_andar_liberado"]
 [connection signal="body_entered" from="Estatuas/Patria/Area2D" to="Estatuas/Patria/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Estatuas/Patria/Area2D" to="Estatuas/Patria/Area2D" method="_on_body_exited"]
 [connection signal="body_entered" from="OpenPuzzle" to="OpenPuzzle" method="_on_body_entered"]
 [connection signal="body_exited" from="OpenPuzzle" to="OpenPuzzle" method="_on_body_exited"]
-[connection signal="pressed" from="Btn_Interacao/Btn_Interacao_Pressed" to="Btn_Interacao/Btn_Interacao_Pressed" method="_on_pressed"]
 [connection signal="body_entered" from="Quest_1/QuestArea_1" to="Quest_1/QuestArea_1" method="_on_body_entered"]
 [connection signal="body_entered" from="Quest_2/QuestArea_2" to="Quest_2/QuestArea_2" method="_on_body_entered"]
 [connection signal="body_entered" from="Quest_3/QuestArea_3" to="Quest_3/QuestArea_3" method="_on_body_entered"]

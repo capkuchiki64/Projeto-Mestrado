@@ -1,0 +1,28 @@
+[gd_scene load_steps=12 format=3 uid="uid://dehpqf5e1uw7k"]
+
+[ext_resource type="Script" uid="uid://y2l5wocfgo54" path="res://scripts/puzzle_3.gd" id="1_paqg8"]
+[ext_resource type="PackedScene" uid="uid://cltvcbw1fft0d" path="res://cenas/tile_3.tscn" id="2_k5rqi"]
+[ext_resource type="Texture2D" uid="uid://c740vjq152osf" path="res://sprites/puzzles/puzzle_3/AAGRBT0C7xk_1768251493627.png" id="3_k5rqi"]
+[ext_resource type="Texture2D" uid="uid://bbbh1vtjtfy2t" path="res://sprites/puzzles/puzzle_3/AAGRBT0C7xk_1768251493630.png" id="4_qknnu"]
+[ext_resource type="Texture2D" uid="uid://bjpeqo0jbwj6n" path="res://sprites/puzzles/puzzle_3/AAGRBT0C7xk_1768251493635.png" id="5_kxyt1"]
+[ext_resource type="Texture2D" uid="uid://sdlchnkri6ta" path="res://sprites/puzzles/puzzle_3/AAGRBT0C7xk_1768251493641.png" id="6_ve5cr"]
+[ext_resource type="Texture2D" uid="uid://bu862sv2r27r4" path="res://sprites/puzzles/puzzle_3/AAGRBT0C7xk_1768251493645.png" id="7_24vtd"]
+[ext_resource type="Texture2D" uid="uid://btatswjvuacqv" path="res://sprites/puzzles/puzzle_3/AAGRBT0C7xk_1768251493652.png" id="8_q1pqm"]
+[ext_resource type="Texture2D" uid="uid://dvcqoe65pkn03" path="res://sprites/puzzles/puzzle_3/AAGRBT0C7xk_1768251493658.png" id="9_sei2c"]
+[ext_resource type="Texture2D" uid="uid://c8s6jot7e8quv" path="res://sprites/puzzles/puzzle_3/AAGRBT0C7xk_1768251493669.png" id="10_y531l"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_nohhl"]
+
+[node name="Puzzle3" type="Node2D"]
+script = ExtResource("1_paqg8")
+tile_scene = ExtResource("2_k5rqi")
+tile_textures = Array[Texture2D]([ExtResource("3_k5rqi"), ExtResource("3_k5rqi"), ExtResource("4_qknnu"), ExtResource("5_kxyt1"), ExtResource("6_ve5cr"), ExtResource("7_24vtd"), ExtResource("8_q1pqm"), ExtResource("9_sei2c"), ExtResource("10_y531l")])
+
+[node name="Grid" type="Node2D" parent="."]
+position = Vector2(1126, 651)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = SubResource("CanvasTexture_nohhl")
+metadata/_edit_use_anchors_ = true

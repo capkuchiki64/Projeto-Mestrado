@@ -16,13 +16,15 @@
 [node name="Puzzle" type="Node2D"]
 script = ExtResource("1_fpvee")
 tile_scene = ExtResource("2_e56d5")
-tile_textures = Array[Texture2D]([ExtResource("3_nohhl"), ExtResource("4_k5jtt"), ExtResource("5_jx8ed"), ExtResource("6_tmyl6"), ExtResource("7_o5gy4"), ExtResource("8_1ou2r"), ExtResource("9_2tuvx"), ExtResource("10_ese5h")])
+tile_textures = Array[Texture2D]([ExtResource("3_nohhl"), ExtResource("10_ese5h"), ExtResource("9_2tuvx"), ExtResource("4_k5jtt"), ExtResource("8_1ou2r"), ExtResource("5_jx8ed"), ExtResource("6_tmyl6"), ExtResource("7_o5gy4")])
 
 [node name="Grid" type="Node2D" parent="."]
-position = Vector2(834, 397)
+position = Vector2(-256, 111)
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1920.0
-offset_bottom = 1080.0
+offset_left = -1090.0
+offset_top = -286.0
+offset_right = 830.0
+offset_bottom = 794.0
 texture = SubResource("CanvasTexture_nohhl")
 metadata/_edit_use_anchors_ = true

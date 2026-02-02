@@ -1,0 +1,28 @@
+[gd_scene load_steps=12 format=3 uid="uid://d2el21iofohaj"]
+
+[ext_resource type="Script" uid="uid://kgx3v2nynrxf" path="res://scripts/puzzle_2.gd" id="1_270ef"]
+[ext_resource type="PackedScene" uid="uid://srivlnft5c6g" path="res://cenas/tile_2.tscn" id="2_njk6e"]
+[ext_resource type="Texture2D" uid="uid://qs6ysqp3nxux" path="res://sprites/puzzles/puzzle_2/padrao1.png" id="3_ye2yw"]
+[ext_resource type="Texture2D" uid="uid://bfp1mahioec0g" path="res://sprites/puzzles/puzzle_2/padrao2.png" id="4_fb6s8"]
+[ext_resource type="Texture2D" uid="uid://cyjtyex0ma2x5" path="res://sprites/puzzles/puzzle_2/padrao3.png" id="5_t6i7r"]
+[ext_resource type="Texture2D" uid="uid://d1cixn5tj1lmb" path="res://sprites/puzzles/puzzle_2/padrao4.png" id="6_8irev"]
+[ext_resource type="Texture2D" uid="uid://du2rj5awnedls" path="res://sprites/puzzles/puzzle_2/padrao5.png" id="7_a2jey"]
+[ext_resource type="Texture2D" uid="uid://1ujxvk03q7ad" path="res://sprites/puzzles/puzzle_2/padrao6.png" id="8_08w7e"]
+[ext_resource type="Texture2D" uid="uid://b0vnbxy0jnbtn" path="res://sprites/puzzles/puzzle_2/padrao7.png" id="9_c7etk"]
+[ext_resource type="Texture2D" uid="uid://bsp747mr4yi3b" path="res://sprites/puzzles/puzzle_2/padrao8.png" id="10_k64to"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_nohhl"]
+
+[node name="Puzzle4" type="Node2D"]
+script = ExtResource("1_270ef")
+tile_scene = ExtResource("2_njk6e")
+tile_textures = Array[Texture2D]([ExtResource("3_ye2yw"), ExtResource("4_fb6s8"), ExtResource("5_t6i7r"), ExtResource("6_8irev"), ExtResource("7_a2jey"), ExtResource("8_08w7e"), ExtResource("9_c7etk"), ExtResource("10_k64to")])
+
+[node name="Grid" type="Node2D" parent="."]
+position = Vector2(834, 397)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = SubResource("CanvasTexture_nohhl")
+metadata/_edit_use_anchors_ = true

@@ -7,7 +7,6 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="Dialogo_1" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0

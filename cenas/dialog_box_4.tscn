@@ -1,20 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://dd3flq4yxmjvp"]
+[gd_scene load_steps=3 format=3 uid="uid://dd3flq4yxmjvp"]
 
-[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="1_cma6k"]
+[ext_resource type="Texture2D" uid="uid://p0kwl0iipqw0" path="res://sprites/balao_certo.png" id="1_ett50"]
+[ext_resource type="Texture2D" uid="uid://6iddyfyilcxm" path="res://sprites/balao_errado.png" id="2_5leup"]
 
 [node name="DialogBox_4" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 
 [node name="Dialogo_1_Certo" type="Control" parent="."]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1_Certo"]
-position = Vector2(-18, 0)
-scale = Vector2(1.2301258, 0.20502092)
-texture = ExtResource("1_cma6k")
+[node name="Sprite2D3" type="Sprite2D" parent="Dialogo_1_Certo"]
+scale = Vector2(0.3263473, 0.3263473)
+texture = ExtResource("1_ett50")
 
 [node name="Label" type="Label" parent="Dialogo_1_Certo"]
 layout_mode = 0
@@ -27,22 +28,21 @@ text = "Parabéns!!! Você acertou o enigma. Esta é a chave dos VALORES SOCIAIS
 DO TRABALHO, que abre o primeiro portal."
 
 [node name="Dialogo_2_Errado" type="Control" parent="."]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2_Errado"]
-position = Vector2(-18, 0)
-scale = Vector2(1.2301258, 0.20502092)
-texture = ExtResource("1_cma6k")
+[node name="Sprite2D3" type="Sprite2D" parent="Dialogo_2_Errado"]
+scale = Vector2(0.326, 0.326)
+texture = ExtResource("2_5leup")
 
 [node name="Label" type="Label" parent="Dialogo_2_Errado"]
 layout_mode = 0
 offset_left = -174.0
 offset_top = -16.0
-offset_right = 175.0
-offset_bottom = 15.0
+offset_right = 35.0
+offset_bottom = 32.0
 theme_override_font_sizes/font_size = 10
-text = "Parabéns!!! Você acertou o enigma. Esta é a chave dos VALORES SOCIAIS 
-DO TRABALHO, que abre o primeiro portal."
+text = "Sinto muito, esta não é a chave correta.
+ Você precisa de outra chave para avançar. 
+Continue procurando."

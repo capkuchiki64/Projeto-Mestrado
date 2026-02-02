@@ -1,23 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://bypuo1eyvls3b"]
+[gd_scene load_steps=3 format=3 uid="uid://bypuo1eyvls3b"]
 
-[ext_resource type="Texture2D" uid="uid://vit0p6ce57s7" path="res://sprites/balão.png" id="1_joa4c"]
+[ext_resource type="Texture2D" uid="uid://p0kwl0iipqw0" path="res://sprites/balao_certo.png" id="1_5fcfw"]
+[ext_resource type="Texture2D" uid="uid://6iddyfyilcxm" path="res://sprites/balao_errado.png" id="2_5fcfw"]
 
 [node name="DialogBox_8" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 
-[node name="Dialogo_1" type="Control" parent="."]
-visible = false
+[node name="Dialogo_1_Certo" type="Control" parent="."]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_1"]
-position = Vector2(-18, 0)
-scale = Vector2(1.2301258, 0.20502092)
-texture = ExtResource("1_joa4c")
+[node name="Sprite2D3" type="Sprite2D" parent="Dialogo_1_Certo"]
+scale = Vector2(0.3263473, 0.3263473)
+texture = ExtResource("1_5fcfw")
 
-[node name="Label" type="Label" parent="Dialogo_1"]
+[node name="Label" type="Label" parent="Dialogo_1_Certo"]
 layout_mode = 0
 offset_left = -127.0
 offset_top = -15.0
@@ -27,17 +26,16 @@ theme_override_font_sizes/font_size = 10
 text = "Parabéns!!! Você acertou o enigma. Esta é a chave do 
 PLURALISMO POLÍTICO, que abre o quarto portal."
 
-[node name="Dialogo_2" type="Control" parent="."]
+[node name="Dialogo_2_Errado" type="Control" parent="."]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Sprite2D2" type="Sprite2D" parent="Dialogo_2"]
-position = Vector2(-18, 0)
-scale = Vector2(1.2301258, 0.20502092)
-texture = ExtResource("1_joa4c")
+[node name="Sprite2D3" type="Sprite2D" parent="Dialogo_2_Errado"]
+scale = Vector2(0.326, 0.326)
+texture = ExtResource("2_5fcfw")
 
-[node name="Label" type="Label" parent="Dialogo_2"]
+[node name="Label" type="Label" parent="Dialogo_2_Errado"]
 layout_mode = 0
 offset_left = -150.0
 offset_top = -16.0
