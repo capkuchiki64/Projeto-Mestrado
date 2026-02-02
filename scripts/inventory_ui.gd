@@ -4,10 +4,11 @@ extends Control
 @onready var inventory = player.get_node("Inventory")
 
 @onready var key_icons := {
-	"red": $chave_colorida,
+	"yellow": $chave_amarela,
 	"blue": $chave_azul,
 	"green": $chave_verde,
-	"yellow": $chave_amarela
+	"red": $chave_colorida
+
 }
 
 func _ready():

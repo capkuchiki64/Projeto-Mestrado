@@ -9,7 +9,7 @@ const GRID_SIZE: int = 3
 const TILE_SIZE: int = 128
 const GRID_OFFSET: Vector2 = Vector2(-96, -96)
 
-var empty_pos: Vector2i = Vector2i(2, 2)
+var empty_pos: Vector2i = Vector2i(1, 1)
 var tiles: Dictionary = {}
 var is_moving: bool = false
 var finished: bool = false # impede finalizar duas vezes
@@ -20,11 +20,12 @@ var victory_layout := {
 	Vector2i(1,0): 2,
 	Vector2i(2,0): 3,
 	Vector2i(0,1): 4,
-	Vector2i(1,1): 5,
-	Vector2i(2,1): 6,
-	Vector2i(0,2): 7,
-	Vector2i(1,2): 8
+	Vector2i(2,1): 5,
+	Vector2i(0,2): 6,
+	Vector2i(1,2): 7,
+	Vector2i(2,2): 8
 }
+
 
 @onready var grid: Node2D = $Grid
 

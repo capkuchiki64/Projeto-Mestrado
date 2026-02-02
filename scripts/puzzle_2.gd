@@ -1,6 +1,6 @@
 extends Node2D
 
-signal puzzle_finalizado2
+signal puzzle_finalizado
 
 @export var tile_scene: PackedScene
 @export var tile_textures: Array[Texture2D]
@@ -10,7 +10,7 @@ const TILE_SIZE: int = 128
 const GRID_OFFSET: Vector2 = Vector2(-96, -96)
 
 # Agora o vazio representa o TILE 8
-var empty_pos: Vector2i = Vector2i(1, 2)
+var empty_pos: Vector2i = Vector2i(2, 2)
 
 var tiles: Dictionary = {}
 var is_moving: bool = false
@@ -24,8 +24,10 @@ var victory_layout := {
 	Vector2i(0,1): 4,
 	Vector2i(1,1): 5,
 	Vector2i(2,1): 6,
-	Vector2i(0,2): 7
+	Vector2i(0,2): 7,
+	Vector2i(1,2): 8
 }
+
 
 @onready var grid: Node2D = $Grid
 
@@ -45,14 +47,9 @@ func create_grid():
 		for x in range(GRID_SIZE):
 			var pos: Vector2i = Vector2i(x, y)
 
-			# pula a posição vazia (tile 8)
+			# pula apenas a posição vazia
 			if pos == empty_pos:
-				id += 1
 				continue
-
-			# pula explicitamente o TILE 8
-			if id == 8:
-				id += 1
 
 			var tile = tile_scene.instantiate()
 			grid.add_child(tile)
@@ -69,6 +66,7 @@ func create_grid():
 
 			tiles[pos] = tile
 			id += 1
+
 
 
 # =========================
