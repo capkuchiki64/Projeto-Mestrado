@@ -1,4 +1,14 @@
-[gd_scene format=3 uid="uid://bm0jlaswjncjt"]
+[gd_scene load_steps=10 format=3 uid="uid://bm0jlaswjncjt"]
+
+[ext_resource type="Script" uid="uid://biuoetarjlenh" path="res://scripts/button_play.gd" id="1_bwjgb"]
+[ext_resource type="Texture2D" uid="uid://ntdasik0cfku" path="res://ui/Rectangle 1.png" id="1_fcydj"]
+[ext_resource type="Texture2D" uid="uid://4pbpdb3eunk2" path="res://ui/jogar.png" id="2_jbsda"]
+[ext_resource type="Script" uid="uid://bh22epx5mlwel" path="res://scripts/button_quit.gd" id="2_udkah"]
+[ext_resource type="Texture2D" uid="uid://brsnius4ic3vy" path="res://ui/sair.png" id="4_l8jcj"]
+[ext_resource type="Texture2D" uid="uid://dkw0db8mmg14f" path="res://ui/gdr logo 1.png" id="5_0bcp5"]
+[ext_resource type="Texture2D" uid="uid://fosrrlfurixd" path="res://ui/creditos.png" id="6_0bcp5"]
+[ext_resource type="Script" uid="uid://c62w5g2sy1ctm" path="res://scripts/button_creditos.gd" id="6_jbsda"]
+[ext_resource type="AudioStream" uid="uid://ly4rtusuylqu" path="res://audios/interacao.ogg" id="9_cp6tm"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -10,18 +20,66 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_left = -142.0
+offset_right = 1998.0
+offset_bottom = 1080.0
+texture = ExtResource("1_fcydj")
 
-[node name="Button" type="Button" parent="."]
+[node name="Button_Play" type="Button" parent="."]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-text = "INICIAR"
+offset_left = 312.0
+offset_top = 751.0
+offset_right = 695.00006
+offset_bottom = 864.0
+icon = ExtResource("2_jbsda")
+flat = true
+script = ExtResource("1_bwjgb")
 
-[node name="Button2" type="Button" parent="."]
+[node name="Button_Quit" type="Button" parent="."]
 layout_mode = 0
-offset_top = 151.0
-offset_right = 67.0
-offset_bottom = 182.0
-text = "SAIR"
+offset_left = 1117.0
+offset_top = 749.0
+offset_right = 1502.0
+offset_bottom = 866.0
+icon = ExtResource("4_l8jcj")
+flat = true
+script = ExtResource("2_udkah")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 77.0
+offset_right = 1491.0
+offset_bottom = 617.0
+texture = ExtResource("5_0bcp5")
+
+[node name="Button_Creditos" type="Button" parent="."]
+layout_mode = 0
+offset_left = 715.3226
+offset_top = 751.0
+offset_right = 1098.3225
+offset_bottom = 864.0
+icon = ExtResource("6_0bcp5")
+flat = true
+script = ExtResource("6_jbsda")
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_cp6tm")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(314, 755)
+texture_normal = ExtResource("2_jbsda")
+action = "ui_accept"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
+position = Vector2(721, 753)
+texture_normal = ExtResource("6_0bcp5")
+action = "ui_accept"
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="."]
+position = Vector2(1120, 753)
+texture_normal = ExtResource("4_l8jcj")
+action = "ui_accept"
+
+[connection signal="pressed" from="Button_Play" to="Button_Play" method="_on_pressed"]
+[connection signal="pressed" from="Button_Creditos" to="Button_Creditos" method="_on_pressed"]

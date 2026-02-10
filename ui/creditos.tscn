@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b6q02pufvxow4"]
+[gd_scene load_steps=7 format=3 uid="uid://b6q02pufvxow4"]
 
 [ext_resource type="Texture2D" uid="uid://ntdasik0cfku" path="res://ui/Rectangle 1.png" id="1_fr3nv"]
 [ext_resource type="Texture2D" uid="uid://b688tmbr70s4b" path="res://ui/voltar.png" id="2_ta2ta"]
 [ext_resource type="Script" uid="uid://7pbokm3dn377" path="res://ui/button_return.gd" id="3_dlmjy"]
-[ext_resource type="Texture2D" uid="uid://dm3v2e8mi1330" path="res://ui/Desenvolvido por Caroline Aloca e Matheus Andrade..png" id="4_jbwdj"]
-[ext_resource type="Texture2D" uid="uid://b1ko7fc81bayx" path="res://ui/Derivado do Projeto de Mestrado do Dr. Alexandre Romualdo Mendes..png" id="5_jgghj"]
+[ext_resource type="Texture2D" uid="uid://xn7x4ufr4ukt" path="res://ui/Desenvolvido por Caroline Aloca e Matheus Andrade..png" id="4_jbwdj"]
+[ext_resource type="Texture2D" uid="uid://4wabf66oqkyd" path="res://ui/Derivado do Projeto de Mestrado de Alexandre Romualdo Mendes..png" id="5_jbwdj"]
+[ext_resource type="AudioStream" uid="uid://ly4rtusuylqu" path="res://audios/interacao.ogg" id="6_jgghj"]
 
 [node name="Creditos" type="Control"]
 layout_mode = 3
@@ -33,6 +34,14 @@ texture = ExtResource("4_jbwdj")
 
 [node name="DerivadoDoProjetoDeMestradoDoDr_AlexandreRomualdoMendes_" type="Sprite2D" parent="."]
 position = Vector2(1411, 541)
-texture = ExtResource("5_jgghj")
+texture = ExtResource("5_jbwdj")
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_jgghj")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(89, 101)
+texture_normal = ExtResource("2_ta2ta")
+action = "ui_accept"
 
 [connection signal="pressed" from="Button_Return" to="Button_Return" method="_on_pressed"]
